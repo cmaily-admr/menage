@@ -47,7 +47,8 @@
     .section { padding: 84px 0; }
     .sur-titre { display: inline-block; font-size: .8rem; font-weight: 800; letter-spacing: .08em; text-transform: uppercase; color: var(--orange-admr); margin-bottom: 10px; }
     h2 { font-size: clamp(1.7rem, 3.6vw, 2.4rem); line-height: 1.15; margin: 0 0 16px; color: var(--vert-fonce); font-weight: 800; letter-spacing: -.01em; }
-    h2 em { font-style: italic; color: var(--vert-admr); }
+    /* Accent des titres : même typo que « pour vous. » dans le hero */
+    h2 em, .en-savoir-texte h2 em { font-family: var(--police-titres); font-style: italic; font-weight: 700; color: var(--vert-admr); letter-spacing: 0; }
     .chapo { font-size: 1.12rem; color: var(--gris-texte); max-width: 720px; margin: 0 0 36px; }
     .btn { display: inline-flex; align-items: center; justify-content: center; gap: 10px; font: inherit; font-weight: 800; font-size: 1rem; text-decoration: none; border: 0; cursor: pointer; padding: 15px 26px; border-radius: 999px; transition: transform .15s ease, background .15s ease, box-shadow .15s ease; }
     .btn svg { width: 19px; height: 19px; flex: 0 0 auto; }
@@ -79,7 +80,7 @@
     .hero h1 { margin: 0; font-weight: 800; line-height: 1.08; font-size: clamp(2.2rem, 5.4vw, 3.7rem); letter-spacing: -.015em; }
     .hero h1 .l1 { display: block; }
     .hero h1 .l2 { display: block; margin-top: 10px; color: #FFD9A0; }
-    .hero h1 em { white-space: nowrap; font-family: Georgia, "Times New Roman", serif; font-style: italic; font-weight: 700; }
+    .hero h1 em { white-space: nowrap; font-family: var(--police-titres); font-style: italic; font-weight: 700; }
     .hero p { font-size: 1.15rem; margin: 26px 0 32px; max-width: 520px; opacity: .95; }
     .hero-ctas { display: flex; flex-wrap: wrap; gap: 12px; }
     .hero-points { display: flex; flex-wrap: wrap; gap: 10px 22px; margin: 34px 0 0; padding: 0; list-style: none; font-weight: 700; font-size: .95rem; }
@@ -239,7 +240,7 @@
     .chiffre:nth-child(2) strong, .chiffre:nth-child(3) strong { color: var(--vert-admr); }
     .chiffre span { display: block; margin-top: 8px; font-weight: 700; color: var(--vert-fonce); font-size: .95rem; line-height: 1.35; }
     .metiers-titre { margin: 46px 0 16px; font-size: .82rem; font-weight: 800; letter-spacing: .08em; text-transform: uppercase; color: var(--gris-clair); }
-    .metiers { display: grid; grid-template-columns: repeat(6, 1fr); gap: 12px; list-style: none; padding: 0; margin: 0; }
+    .metiers { display: grid; grid-template-columns: repeat(7, 1fr); gap: 12px; list-style: none; padding: 0; margin: 0; }
     .metiers li { background: var(--blanc); border: 1px solid #F0E2CC; border-radius: 14px; padding: 16px 12px; text-align: center; font-size: .9rem; line-height: 1.3; }
     .metiers li.actif { background: var(--vert-admr); border-color: var(--vert-admr); color: #fff; }
     .metiers li.actif small { color: #EAF4E0; }
@@ -247,7 +248,7 @@
     .metiers li.actif svg { color: #fff; }
     .metiers strong { display: block; }
     .metiers small { display: block; color: var(--gris-clair); font-size: .78rem; margin-top: 2px; }
-    @media (max-width: 960px) { .intro-grille { grid-template-columns: 1fr; } .metiers { grid-template-columns: repeat(3, 1fr); } }
+    @media (max-width: 960px) { .intro-grille { grid-template-columns: 1fr; } .metiers { grid-template-columns: repeat(3, 1fr); } .metiers li.actif { grid-column: 1 / -1; } }
     @media (max-width: 520px) { .metiers { grid-template-columns: 1fr 1fr; } }
 
     /* ---------- Bouton fixe mobile ---------- */
@@ -319,7 +320,7 @@
           <h2>L'ADMR, <em>une association à vos côtés</em> depuis 1945</h2>
           <p>L'ADMR de Côte-d'Or est une association à but non lucratif. Depuis 1945, elle accompagne les habitants à chaque étape de la vie.</p>
           <p>Avec 800 salariés et 21 associations locales, nous intervenons sur tout le département&nbsp;: au plus près de chez vous, dans les villes comme dans les villages.</p>
-          <p>Le ménage, c'est un de nos métiers&nbsp;: nous accompagnons aussi les personnes âgées et en situation de handicap, nous soutenons les familles avec nos TISF, nous assurons des soins à domicile avec nos SSIAD et nous gérons des crèches.</p>
+          <p>Le ménage, c'est un de nos métiers&nbsp;: nous accompagnons aussi les personnes âgées et en situation de handicap, nous soutenons les familles avec nos TISF, nous assurons des soins à domicile avec nos SSIAD, nous livrons des repas à domicile et nous gérons des crèches.</p>
         </div>
         <div class="chiffres apparait">
           <div class="chiffre"><strong>1945</strong><span>Une association à but non lucratif</span></div>
@@ -354,6 +355,10 @@
         <li>
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="9" r="5"/><path d="M10 9h.01M14 9h.01M10.5 11a2 2 0 0 0 3 0"/><path d="M6 21a6 6 0 0 1 12 0"/></svg>
           <strong>Petite enfance</strong><small>Crèches</small>
+        </li>
+        <li>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 15h18"/><path d="M4 15a8 8 0 0 1 16 0"/><path d="M12 5V3.5M10.5 3.5h3"/><path d="M2 19h20"/></svg>
+          <strong>Portage de repas</strong><small>Livraison à domicile</small>
         </li>
       </ul>
     </div>
