@@ -6,9 +6,24 @@
   <title>Le ménage ADMR — Côte-d'Or</title>
   <meta name="description" content="Le temps en famille pour vous, le ménage pour nous. Service de ménage ADMR en Côte-d'Or, pour tous, régulier ou ponctuel, avec 50 % de crédit d'impôt.">
   <meta name="theme-color" content="#5B9B31">
+  <link rel="canonical" href="https://menage.admr-21.fr/">
+
+  <!-- Partage réseaux sociaux (Facebook, LinkedIn, WhatsApp, SMS…) -->
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="fr_FR">
+  <meta property="og:site_name" content="ADMR de Côte-d'Or">
+  <meta property="og:url" content="https://menage.admr-21.fr/">
   <meta property="og:title" content="Le ménage ADMR — Le temps en famille pour vous, le ménage pour nous.">
-  <meta property="og:description" content="Service de ménage pour tous en Côte-d'Or. 50 % de crédit d'impôt. Rappel gratuit et sans engagement.">
-  <meta property="og:image" content="img/famille-coucher-soleil.jpg">
+  <meta property="og:description" content="Service de ménage pour tous en Côte-d'Or, régulier ou ponctuel. 50 % de crédit d'impôt. Rappel gratuit et sans engagement.">
+  <meta property="og:image" content="https://menage.admr-21.fr/img/partage-reseaux.jpg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="Le temps en famille pour vous. Le ménage pour nous. ADMR — 50 % de crédit d'impôt.">
+  <!-- Partage X / Twitter -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Le ménage ADMR — Le temps en famille pour vous, le ménage pour nous.">
+  <meta name="twitter:description" content="Service de ménage pour tous en Côte-d'Or. 50 % de crédit d'impôt. Rappel gratuit et sans engagement.">
+  <meta name="twitter:image" content="https://menage.admr-21.fr/img/partage-reseaux.jpg">
   <style>
     /* =========================================================
        CHARTE ADMR — modifiez les couleurs ici
@@ -213,6 +228,28 @@
     .en-savoir-texte p { margin: 0; }
     @media (max-width: 600px) { .en-savoir-carte { padding: 26px 22px; } .en-savoir-carte .btn { width: 100%; } }
 
+    /* ---------- Introduction : qui sommes-nous ---------- */
+    .intro { background: var(--creme); padding: 76px 0; }
+    .intro-grille { display: grid; grid-template-columns: 1.05fr .95fr; gap: 52px; align-items: center; }
+    .intro-texte p { font-size: 1.08rem; margin: 0 0 14px; }
+    .intro-texte p:last-child { margin-bottom: 0; }
+    .chiffres { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
+    .chiffre { background: var(--blanc); border: 1px solid #F0E2CC; border-radius: 18px; padding: 22px 20px; box-shadow: 0 10px 28px rgba(110,58,18,.08); }
+    .chiffre strong { display: block; font-size: clamp(2rem, 4vw, 2.6rem); font-weight: 900; line-height: 1; color: var(--orange-admr); letter-spacing: -.02em; }
+    .chiffre:nth-child(2) strong, .chiffre:nth-child(3) strong { color: var(--vert-admr); }
+    .chiffre span { display: block; margin-top: 8px; font-weight: 700; color: var(--vert-fonce); font-size: .95rem; line-height: 1.35; }
+    .metiers-titre { margin: 46px 0 16px; font-size: .82rem; font-weight: 800; letter-spacing: .08em; text-transform: uppercase; color: var(--gris-clair); }
+    .metiers { display: grid; grid-template-columns: repeat(6, 1fr); gap: 12px; list-style: none; padding: 0; margin: 0; }
+    .metiers li { background: var(--blanc); border: 1px solid #F0E2CC; border-radius: 14px; padding: 16px 12px; text-align: center; font-size: .9rem; line-height: 1.3; }
+    .metiers li.actif { background: var(--vert-admr); border-color: var(--vert-admr); color: #fff; }
+    .metiers li.actif small { color: #EAF4E0; }
+    .metiers svg { width: 28px; height: 28px; color: var(--vert-admr); display: block; margin: 0 auto 8px; }
+    .metiers li.actif svg { color: #fff; }
+    .metiers strong { display: block; }
+    .metiers small { display: block; color: var(--gris-clair); font-size: .78rem; margin-top: 2px; }
+    @media (max-width: 960px) { .intro-grille { grid-template-columns: 1fr; } .metiers { grid-template-columns: repeat(3, 1fr); } }
+    @media (max-width: 520px) { .metiers { grid-template-columns: 1fr 1fr; } }
+
     /* ---------- Bouton fixe mobile ---------- */
     .cta-mobile { display: none; }
     @media (max-width: 720px) {
@@ -273,6 +310,55 @@
     </div>
   </section>
 
+  <!-- ===================== INTRODUCTION : QUI SOMMES-NOUS ===================== -->
+  <section class="intro" id="qui-sommes-nous">
+    <div class="contenu">
+      <div class="intro-grille">
+        <div class="intro-texte apparait">
+          <span class="sur-titre">Qui sommes-nous&nbsp;?</span>
+          <h2>L'ADMR, <em>une association à vos côtés</em> depuis 1945</h2>
+          <p>L'ADMR de Côte-d'Or est une association à but non lucratif. Depuis 1945, elle accompagne les habitants à chaque étape de la vie.</p>
+          <p>Avec 800 salariés et 21 associations locales, nous intervenons sur tout le département&nbsp;: au plus près de chez vous, dans les villes comme dans les villages.</p>
+          <p>Le ménage, c'est un de nos métiers&nbsp;: nous accompagnons aussi les personnes âgées et en situation de handicap, nous soutenons les familles avec nos TISF, nous assurons des soins à domicile avec nos SSIAD et nous gérons des crèches.</p>
+        </div>
+        <div class="chiffres apparait">
+          <div class="chiffre"><strong>1945</strong><span>Une association à but non lucratif</span></div>
+          <div class="chiffre"><strong>800</strong><span>salariés en Côte-d'Or</span></div>
+          <div class="chiffre"><strong>21</strong><span>associations locales</span></div>
+          <div class="chiffre"><strong>100&nbsp;%</strong><span>du département couvert</span></div>
+        </div>
+      </div>
+
+      <p class="metiers-titre">Nos services</p>
+      <ul class="metiers apparait">
+        <li class="actif">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 21h18"/><path d="M5 21V7l7-4 7 4v14"/><path d="M9 21v-6h6v6"/></svg>
+          <strong>Ménage</strong><small>Pour tous</small>
+        </li>
+        <li>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="6" r="3"/><path d="M12 9v6M9 21l3-6 3 6M8 12h8"/><path d="M18 12v9"/></svg>
+          <strong>Personnes âgées</strong><small>Aide à domicile</small>
+        </li>
+        <li>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="4.5" r="2"/><path d="M11 7v6h5l2 5"/><path d="M15 15.5A5 5 0 1 1 8 10"/></svg>
+          <strong>Handicap</strong><small>Accompagnement</small>
+        </li>
+        <li>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="8" cy="6" r="2.5"/><circle cx="17" cy="8" r="2"/><path d="M4 21v-6a4 4 0 0 1 8 0v6"/><path d="M14 21v-4a3 3 0 0 1 6 0v4"/></svg>
+          <strong>Familles</strong><small>TISF</small>
+        </li>
+        <li>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="7" width="18" height="13" rx="2"/><path d="M9 7V5a2 2 0 0 1 2-2h2a2 2 0 0 1 2 2v2"/><path d="M12 10.5v6M9 13.5h6"/></svg>
+          <strong>Soins à domicile</strong><small>SSIAD</small>
+        </li>
+        <li>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="9" r="5"/><path d="M10 9h.01M14 9h.01M10.5 11a2 2 0 0 0 3 0"/><path d="M6 21a6 6 0 0 1 12 0"/></svg>
+          <strong>Petite enfance</strong><small>Crèches</small>
+        </li>
+      </ul>
+    </div>
+  </section>
+
   <!-- ===================== 1. AVANTAGES ===================== -->
   <section class="section avantages" id="avantages">
     <div class="contenu">
@@ -322,7 +408,7 @@
         <article class="carte-avantage apparait">
           <div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21s-7-6.3-7-11a7 7 0 0 1 14 0c0 4.7-7 11-7 11z"/><circle cx="12" cy="10" r="2.5"/></svg></div>
           <h3>Un réseau de proximité</h3>
-          <p>1<sup>er</sup> réseau national associatif de service à la personne, implanté partout en Côte-d'Or.</p>
+          <p>1<sup>er</sup> réseau national associatif de service à la personne, avec 21 associations locales partout en Côte-d'Or.</p>
         </article>
         <article class="carte-avantage apparait">
           <div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.7l-1-1.1a5.5 5.5 0 0 0-7.8 7.8l1 1.1L12 21l7.8-7.5 1-1.1a5.5 5.5 0 0 0 0-7.8z"/></svg></div>
