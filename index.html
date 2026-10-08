@@ -1,0 +1,1301 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Le ménage ADMR — Côte-d'Or</title>
+  <meta name="description" content="Le temps en famille pour vous, le ménage pour nous. Service de ménage ADMR en Côte-d'Or, pour tous, régulier ou ponctuel, avec 50 % de crédit d'impôt.">
+  <meta name="theme-color" content="#5B9B31">
+  <meta property="og:title" content="Le ménage ADMR — Le temps en famille pour vous, le ménage pour nous.">
+  <meta property="og:description" content="Service de ménage pour tous en Côte-d'Or. 50 % de crédit d'impôt. Rappel gratuit et sans engagement.">
+  <meta property="og:image" content="img/famille-coucher-soleil.jpg">
+  <style>
+    /* =========================================================
+       CHARTE ADMR — modifiez les couleurs ici
+       ========================================================= */
+    :root {
+      --vert-admr: #5B9B31; --vert-fonce: #2E5A1C; --vert-clair: #EAF4E0;
+      --orange-admr: #E58A00; --orange-clair: #FFF3E0;
+      --brun-campagne: #3A2210; --creme: #FFF8EE;
+      --gris-texte: #363636; --gris-clair: #6B6B6B;
+      --fond-page: #F6F8F3; --blanc: #FFFFFF; --bordure: #E7EBE1;
+      --rayon: 16px;
+      --police-titres: Georgia, "Times New Roman", serif;
+    }
+    * { box-sizing: border-box; }
+    html { font-size: 106.25%; scroll-behavior: smooth; }
+    body { margin: 0; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif; background: var(--blanc); color: var(--gris-texte); line-height: 1.6; }
+    img { max-width: 100%; display: block; }
+    a { color: inherit; }
+    a:focus-visible, button:focus-visible, input:focus-visible { outline: 3px solid var(--orange-admr); outline-offset: 2px; }
+    .contenu { max-width: 1140px; margin: 0 auto; padding: 0 22px; }
+    .section { padding: 84px 0; }
+    .sur-titre { display: inline-block; font-size: .8rem; font-weight: 800; letter-spacing: .08em; text-transform: uppercase; color: var(--orange-admr); margin-bottom: 10px; }
+    h2 { font-size: clamp(1.7rem, 3.6vw, 2.4rem); line-height: 1.15; margin: 0 0 16px; color: var(--vert-fonce); font-weight: 800; letter-spacing: -.01em; }
+    h2 em { font-style: italic; color: var(--vert-admr); }
+    .chapo { font-size: 1.12rem; color: var(--gris-texte); max-width: 720px; margin: 0 0 36px; }
+    .btn { display: inline-flex; align-items: center; justify-content: center; gap: 10px; font: inherit; font-weight: 800; font-size: 1rem; text-decoration: none; border: 0; cursor: pointer; padding: 15px 26px; border-radius: 999px; transition: transform .15s ease, background .15s ease, box-shadow .15s ease; }
+    .btn svg { width: 19px; height: 19px; flex: 0 0 auto; }
+    .btn-orange { background: var(--orange-admr); color: #fff; box-shadow: 0 8px 22px rgba(229,138,0,.35); }
+    .btn-orange:hover { background: #CC7A00; transform: translateY(-2px); }
+    .btn-contour { background: transparent; color: #fff; border: 2px solid rgba(255,255,255,.7); }
+    .btn-contour:hover { background: rgba(255,255,255,.12); }
+    .btn-vert { background: var(--vert-admr); color: #fff; }
+    .btn-vert:hover { background: var(--vert-fonce); }
+
+    /* ---------- En-tête ---------- */
+    .entete { position: sticky; top: 0; z-index: 50; background: rgba(255,255,255,.96); backdrop-filter: blur(8px); border-bottom: 3px solid var(--vert-admr); }
+    .entete-inner { max-width: 1140px; margin: 0 auto; padding: 10px 22px; display: flex; align-items: center; gap: 16px; }
+    .logo { height: 66px; width: auto; }
+    .entete-actions { margin-left: auto; display: flex; align-items: center; gap: 10px; }
+    .entete-tel { display: inline-flex; align-items: center; gap: 8px; font-weight: 800; color: var(--vert-fonce); text-decoration: none; padding: 9px 14px; border-radius: 999px; }
+    .entete-tel:hover { background: var(--vert-clair); }
+    .entete-tel svg { width: 18px; height: 18px; color: var(--vert-admr); }
+    .entete .btn { padding: 10px 18px; font-size: .92rem; box-shadow: none; }
+    @media (max-width: 720px) { .logo { height: 50px; } .entete-tel span { display: none; } .entete .btn { display: none; } }
+
+    /* ---------- Hero (esprit campagne « coucher de soleil ») ---------- */
+    .hero { position: relative; overflow: hidden; color: #fff; background: var(--brun-campagne); }
+    .hero-photo { position: absolute; inset: 0 0 0 auto; width: 62%; background: url("img/famille-coucher-soleil.jpg") center 70% / cover no-repeat; }
+    .hero-photo::after { content: ""; position: absolute; inset: 0; background: linear-gradient(90deg, var(--brun-campagne) 0%, rgba(58,34,16,.8) 18%, rgba(58,34,16,.25) 42%, rgba(58,34,16,0) 62%); }
+    .hero-inner { position: relative; z-index: 2; max-width: 1140px; margin: 0 auto; padding: 96px 22px 110px; }
+    .hero-texte { max-width: 600px; }
+    .hero-badge { display: inline-flex; align-items: center; gap: 8px; background: rgba(255,255,255,.14); border: 1px solid rgba(255,255,255,.25); padding: 6px 14px; border-radius: 999px; font-size: .85rem; font-weight: 700; margin-bottom: 22px; }
+    .hero h1 { margin: 0; font-weight: 800; line-height: 1.08; font-size: clamp(2.2rem, 5.4vw, 3.7rem); letter-spacing: -.015em; }
+    .hero h1 .l1 { display: block; }
+    .hero h1 .l2 { display: block; margin-top: 10px; color: #FFD9A0; }
+    .hero h1 em { white-space: nowrap; font-family: Georgia, "Times New Roman", serif; font-style: italic; font-weight: 700; }
+    .hero p { font-size: 1.15rem; margin: 26px 0 32px; max-width: 520px; opacity: .95; }
+    .hero-ctas { display: flex; flex-wrap: wrap; gap: 12px; }
+    .hero-points { display: flex; flex-wrap: wrap; gap: 10px 22px; margin: 34px 0 0; padding: 0; list-style: none; font-weight: 700; font-size: .95rem; }
+    .hero-points li { display: inline-flex; align-items: center; gap: 8px; }
+    .hero-points svg { width: 20px; height: 20px; color: #FFD9A0; }
+    @media (max-width: 860px) {
+      .hero-photo { width: 100%; opacity: .45; }
+      .hero-photo::after { background: linear-gradient(0deg, var(--brun-campagne) 0%, rgba(58,34,16,.4) 100%); }
+      .hero-inner { padding: 64px 22px 72px; }
+    }
+
+    /* ---------- 1. Avantages ---------- */
+    .avantages { background: var(--blanc); }
+    .avantages-haut { display: grid; grid-template-columns: 1.1fr .9fr; gap: 48px; align-items: center; margin-bottom: 48px; }
+    .avantages-photo { border-radius: 22px; overflow: hidden; aspect-ratio: 4/3; box-shadow: 0 20px 50px rgba(46,90,28,.18); }
+    .avantages-photo img { width: 100%; height: 100%; object-fit: cover; object-position: 30% center; }
+    .pour-qui { display: flex; flex-wrap: wrap; gap: 8px; margin: 0 0 22px; padding: 0; list-style: none; }
+    .pour-qui li { background: var(--vert-clair); color: var(--vert-fonce); font-weight: 700; font-size: .9rem; padding: 6px 14px; border-radius: 999px; }
+    .prestations { margin: 0; padding: 0; list-style: none; display: grid; grid-template-columns: 1fr 1fr; gap: 8px 18px; }
+    .prestations li { display: flex; align-items: center; gap: 10px; font-weight: 600; }
+    .prestations svg { width: 20px; height: 20px; color: var(--vert-admr); flex: 0 0 auto; }
+    .grille-avantages { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; }
+    .carte-avantage { background: var(--fond-page); border: 1px solid var(--bordure); border-radius: var(--rayon); padding: 26px; transition: transform .2s ease, box-shadow .2s ease; }
+    .carte-avantage:hover { transform: translateY(-4px); box-shadow: 0 14px 34px rgba(46,90,28,.12); }
+    .carte-avantage .ico { width: 54px; height: 54px; border-radius: 14px; display: grid; place-items: center; background: var(--vert-admr); color: #fff; margin-bottom: 16px; }
+    .carte-avantage:nth-child(even) .ico { background: var(--orange-admr); }
+    .carte-avantage .ico svg { width: 28px; height: 28px; }
+    .carte-avantage h3 { margin: 0 0 8px; font-size: 1.15rem; color: var(--vert-fonce); }
+    .carte-avantage p { margin: 0; font-size: .97rem; }
+    @media (max-width: 900px) { .avantages-haut { grid-template-columns: 1fr; } .grille-avantages { grid-template-columns: 1fr 1fr; } }
+    @media (max-width: 560px) { .grille-avantages, .prestations { grid-template-columns: 1fr; } }
+
+    /* ---------- 2. Crédit d'impôt ---------- */
+    .impot { position: relative; background: var(--vert-fonce); color: #fff; overflow: hidden; }
+    .impot-fond { position: absolute; inset: 0; background: url("img/credit-impot.jpg") center / cover no-repeat; opacity: .16; }
+    .impot .contenu { position: relative; }
+    .impot h2 { color: #fff; }
+    .impot h2 em { color: #FFD9A0; }
+    .impot-grille { display: grid; grid-template-columns: .9fr 1.1fr; gap: 48px; align-items: center; }
+    .gros-chiffre { font-size: clamp(5rem, 13vw, 9rem); font-weight: 900; line-height: .9; color: #FFD9A0; letter-spacing: -.03em; }
+    .gros-chiffre small { font-size: .35em; font-weight: 800; display: block; color: #fff; letter-spacing: 0; margin-top: 8px; }
+    .impot p { opacity: .95; }
+    .impot ul { padding: 0; margin: 18px 0 0; list-style: none; }
+    .impot ul li { display: flex; gap: 10px; margin-bottom: 10px; }
+    .impot ul svg { width: 20px; height: 20px; color: #FFD9A0; flex: 0 0 auto; margin-top: 3px; }
+    .simulateur { background: var(--blanc); color: var(--gris-texte); border-radius: 22px; padding: 30px; box-shadow: 0 24px 60px rgba(0,0,0,.25); }
+    .simulateur h3 { margin: 0 0 6px; color: var(--vert-fonce); font-size: 1.25rem; }
+    .simulateur .aide { font-size: .9rem; color: var(--gris-clair); margin: 0 0 20px; }
+    .sim-label { display: flex; justify-content: space-between; align-items: baseline; font-weight: 700; margin-bottom: 8px; }
+    .sim-label output { font-size: 1.4rem; color: var(--vert-fonce); font-weight: 900; }
+    input[type=range] { width: 100%; accent-color: var(--orange-admr); height: 28px; }
+    .sim-resultats { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; margin-top: 18px; }
+    .sim-case { border-radius: 14px; padding: 16px; text-align: center; }
+    .sim-case.credit { background: var(--orange-clair); }
+    .sim-case.reel { background: var(--vert-clair); }
+    .sim-case span { display: block; font-size: .82rem; font-weight: 700; text-transform: uppercase; letter-spacing: .04em; color: var(--gris-clair); }
+    .sim-case strong { display: block; font-size: 1.7rem; font-weight: 900; }
+    .sim-case.credit strong { color: #B36A00; }
+    .sim-case.reel strong { color: var(--vert-fonce); }
+    .mention { font-size: .78rem; color: var(--gris-clair); margin: 16px 0 0; line-height: 1.45; }
+    @media (max-width: 900px) { .impot-grille { grid-template-columns: 1fr; } }
+
+    /* ---------- 3. Appartement pédagogique ---------- */
+    .formation { background: var(--fond-page); }
+    .formation-grille { display: grid; grid-template-columns: 1fr 1fr; gap: 56px; align-items: center; }
+    .formation-photos { position: relative; padding: 0 0 60px 0; }
+    .formation-photos .p1 { border-radius: 22px; overflow: hidden; aspect-ratio: 4/3; box-shadow: 0 20px 50px rgba(46,90,28,.18); }
+    .formation-photos .p1 img { width: 100%; height: 100%; object-fit: cover; }
+    .formation-photos .p2 { position: absolute; right: -14px; bottom: 0; width: 48%; border-radius: 18px; overflow: hidden; aspect-ratio: 1/1; border: 6px solid var(--fond-page); box-shadow: 0 16px 40px rgba(0,0,0,.18); }
+    .formation-photos .p2 img { width: 100%; height: 100%; object-fit: cover; object-position: 55% center; }
+    .pastille { position: absolute; left: -10px; top: 22px; background: var(--orange-admr); color: #fff; font-weight: 800; padding: 10px 16px; border-radius: 14px; box-shadow: 0 10px 24px rgba(229,138,0,.35); display: flex; align-items: center; gap: 8px; font-size: .92rem; }
+    .pastille svg { width: 20px; height: 20px; }
+    .etapes { list-style: none; padding: 0; margin: 24px 0 0; display: grid; gap: 14px; }
+    .etapes li { display: flex; gap: 14px; align-items: flex-start; background: var(--blanc); border: 1px solid var(--bordure); border-radius: 14px; padding: 14px 16px; }
+    .etapes .num { flex: 0 0 34px; height: 34px; border-radius: 50%; background: var(--vert-admr); color: #fff; font-weight: 800; display: grid; place-items: center; }
+    .etapes strong { display: block; color: var(--vert-fonce); }
+    .etapes span { font-size: .95rem; }
+    @media (max-width: 900px) { .formation-grille { grid-template-columns: 1fr; } .formation-photos .p2 { right: 0; } }
+
+    /* ---------- 4. On vous rappelle ---------- */
+    .rappel { background: linear-gradient(135deg, #F2A73B 0%, var(--orange-admr) 45%, #B85F0C 100%); color: #fff; }
+    .rappel-grille { display: grid; grid-template-columns: .95fr 1.05fr; gap: 48px; align-items: center; }
+    .rappel h2 { color: #fff; }
+    .rappel h2 em { color: var(--brun-campagne); }
+    .rappel-arg { list-style: none; padding: 0; margin: 20px 0 0; }
+    .rappel-arg li { display: flex; gap: 10px; align-items: center; font-weight: 700; margin-bottom: 10px; }
+    .rappel-arg svg { width: 22px; height: 22px; flex: 0 0 auto; }
+    .rappel-tel { margin-top: 26px; font-size: .98rem; }
+    .rappel-tel a { font-weight: 900; font-size: 1.3rem; text-decoration: none; white-space: nowrap; }
+    .formulaire { background: var(--blanc); color: var(--gris-texte); border-radius: 22px; padding: 32px; box-shadow: 0 24px 60px rgba(90,40,0,.3); }
+    .formulaire h3 { margin: 0 0 18px; color: var(--vert-fonce); font-size: 1.35rem; }
+    .champs-ligne { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; }
+    .champ { margin-bottom: 14px; }
+    .champ label { display: block; font-weight: 700; font-size: .92rem; margin-bottom: 6px; }
+    .champ input { width: 100%; font: inherit; font-size: 1rem; padding: 13px 14px; border: 1.5px solid #D5DBCC; border-radius: 12px; background: #FCFDFB; color: var(--gris-texte); }
+    .champ input:focus { outline: none; border-color: var(--vert-admr); box-shadow: 0 0 0 4px rgba(91,155,49,.18); }
+    .champ input:user-invalid { border-color: #C62828; }
+    .consent { display: flex; gap: 10px; align-items: flex-start; font-size: .84rem; color: var(--gris-clair); margin: 4px 0 18px; }
+    .consent input { width: 20px; height: 20px; margin-top: 1px; accent-color: var(--vert-admr); flex: 0 0 auto; }
+    .formulaire .btn { width: 100%; }
+    .formulaire .btn[disabled] { opacity: .65; cursor: wait; }
+    .piege { position: absolute; left: -9999px; width: 1px; height: 1px; overflow: hidden; }
+    .msg-form { display: none; margin-top: 14px; padding: 14px 16px; border-radius: 12px; font-weight: 700; }
+    .msg-form.ok { display: block; background: var(--vert-clair); color: var(--vert-fonce); }
+    .msg-form.erreur { display: block; background: #FDECEA; color: #B71C1C; }
+    @media (max-width: 900px) { .rappel-grille { grid-template-columns: 1fr; } }
+    @media (max-width: 480px) { .champs-ligne { grid-template-columns: 1fr; gap: 0; } .formulaire { padding: 24px 18px; } }
+
+    /* ---------- 5. Nos associations (repris du Kiosque) ---------- */
+    .assos { background: var(--fond-page); }
+    .barre-recherche { margin: 0 0 28px; position: relative; }
+    .barre-recherche input { width: 100%; padding: 14px 16px 14px 46px; font: inherit; font-size: 1rem; border: 1px solid var(--bordure); border-radius: 12px; background: var(--blanc); color: var(--gris-texte); }
+    .barre-recherche input:focus { outline: 3px solid var(--orange-admr); outline-offset: 1px; border-color: transparent; }
+    .barre-recherche svg { position: absolute; left: 15px; top: 50%; transform: translateY(-50%); width: 20px; height: 20px; color: var(--gris-clair); }
+    .aucun-resultat { display: none; padding: 20px; text-align: center; color: var(--gris-clair); background: var(--blanc); border: 1px solid var(--bordure); border-radius: 12px; }
+    .grille-assos { display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); gap: 22px; }
+    .asso-carte { background: var(--blanc); border: 1px solid var(--bordure); border-radius: 14px; padding: 22px; display: flex; flex-direction: column; }
+    .asso-nom { margin: 0 0 12px; font-size: 1.2rem; color: var(--vert-fonce); font-weight: 800; font-family: Georgia, "Times New Roman", serif; }
+    .asso-adr, .asso-tel { display: flex; align-items: flex-start; gap: 8px; margin: 0 0 8px; font-size: .95rem; }
+    .asso-adr svg, .asso-tel svg { width: 17px; height: 17px; flex: 0 0 auto; color: var(--vert-admr); margin-top: 3px; }
+    .asso-tel a { text-decoration: none; font-weight: 700; }
+    .asso-tel a:hover { color: var(--vert-admr); }
+    .asso-horaires { margin: 12px 0 18px; border-top: 1px solid #EEF1EA; padding-top: 12px; }
+    .h-titre { font-size: .82rem; font-weight: 800; text-transform: uppercase; letter-spacing: .03em; color: var(--gris-clair); margin-bottom: 8px; }
+    .h-ligne { display: flex; justify-content: space-between; gap: 12px; font-size: .9rem; padding: 2px 0; }
+    .h-jour { font-weight: 600; }
+    .h-val { text-align: right; }
+    .h-ligne.ferme .h-jour, .h-ligne.ferme .h-val { color: #B0B0B0; font-weight: 400; }
+    .h-permanence { margin-top: 10px; padding-top: 10px; border-top: 1px dashed #EEF1EA; }
+    .h-permanence .h-perm-titre { font-size: .8rem; font-weight: 700; color: var(--vert-admr); display: flex; align-items: center; gap: 6px; margin-bottom: 4px; }
+    .h-permanence .h-perm-titre svg { width: 14px; height: 14px; }
+    .h-permanence .h-perm-detail { font-size: .88rem; }
+    .asso-actions { margin-top: auto; display: flex; flex-wrap: wrap; gap: 8px; }
+    .asso-mail { display: inline-flex; align-items: center; gap: 8px; background: var(--blanc); color: var(--vert-fonce); border: 1.5px solid var(--vert-admr); text-decoration: none; padding: 9px 15px; border-radius: 10px; font-weight: 700; font-size: .92rem; }
+    .asso-mail:hover { background: var(--vert-clair); }
+    .asso-mail svg, .asso-itineraire svg { width: 16px; height: 16px; }
+    .asso-itineraire { display: inline-flex; align-items: center; gap: 8px; background: var(--vert-admr); color: #fff; text-decoration: none; padding: 10px 16px; border-radius: 10px; font-weight: 700; font-size: .92rem; }
+    .asso-itineraire:hover { background: var(--vert-fonce); }
+
+    /* ---------- 6. En savoir plus ---------- */
+    .en-savoir { background: var(--blanc); padding: 72px 0; }
+    .en-savoir-carte { display: flex; align-items: center; gap: 32px; flex-wrap: wrap; background: var(--vert-clair); border: 1px solid #D7E8C8; border-radius: 22px; padding: 34px 38px; }
+    .en-savoir-carte img { height: 70px; width: auto; }
+    .en-savoir-texte { flex: 1 1 320px; }
+    .en-savoir-texte h2 { font-size: clamp(1.4rem, 2.6vw, 1.8rem); margin-bottom: 6px; }
+    .en-savoir-texte p { margin: 0; }
+    @media (max-width: 600px) { .en-savoir-carte { padding: 26px 22px; } .en-savoir-carte .btn { width: 100%; } }
+
+    /* ---------- Bouton fixe mobile ---------- */
+    .cta-mobile { display: none; }
+    @media (max-width: 720px) {
+      .cta-mobile { display: flex; gap: 10px; position: fixed; left: 12px; right: 12px; bottom: 12px; z-index: 60; }
+      .cta-mobile a { flex: 1; padding: 14px 10px; font-size: .95rem; box-shadow: 0 10px 26px rgba(0,0,0,.28); }
+      .cta-mobile .btn-vert { flex: 0 0 auto; padding: 14px 18px; }
+      .pied-inner { padding-bottom: 96px !important; }
+    }
+
+    /* ---------- Apparition douce ---------- */
+    .apparait { opacity: 0; transform: translateY(18px); transition: opacity .6s ease, transform .6s ease; }
+    .apparait.visible { opacity: 1; transform: none; }
+    @media (prefers-reduced-motion: reduce) { .apparait { opacity: 1; transform: none; transition: none; } html { scroll-behavior: auto; } }
+  </style>
+</head>
+<body>
+
+  <!-- ===================== EN-TÊTE ===================== -->
+  <header class="entete">
+    <div class="entete-inner">
+      <a href="#haut" aria-label="ADMR de Côte-d'Or"><img class="logo" src="img/logo-admr.png" alt="ADMR — pour tous, toute la vie, partout" width="560" height="257"></a>
+      <div class="entete-actions">
+        <a class="entete-tel" href="tel:+33380514751">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L14 12l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 2 6a2 2 0 0 1 2-2z"/></svg>
+          <span>03 80 51 47 51</span>
+        </a>
+        <a class="btn btn-orange" href="#rappel">Être rappelé</a>
+      </div>
+    </div>
+  </header>
+
+  <main id="haut">
+
+  <!-- ===================== HERO ===================== -->
+  <section class="hero">
+    <div class="hero-photo" role="img" aria-label="Une famille profite d'un coucher de soleil"></div>
+    <div class="hero-inner">
+      <div class="hero-texte">
+        <span class="hero-badge">✦ Le ménage ADMR en Côte-d'Or</span>
+        <h1>
+          <span class="l1">Le temps en famille <em>pour vous.</em></span>
+          <span class="l2">Le ménage <em>pour nous.</em></span>
+        </h1>
+        <p>Actifs, familles, jeunes parents, retraités ou personnes seules&nbsp;: confiez l'entretien de votre logement à nos professionnels et consacrez vos journées à ce qui compte vraiment.</p>
+        <div class="hero-ctas">
+          <a class="btn btn-orange" href="#rappel">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L14 12l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 2 6a2 2 0 0 1 2-2z"/></svg>
+            On vous rappelle
+          </a>
+          <a class="btn btn-contour" href="#avantages">Découvrir le service</a>
+        </div>
+        <ul class="hero-points">
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg>50 % de crédit d'impôt</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg>Régulier ou ponctuel</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg>Sans engagement</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== 1. AVANTAGES ===================== -->
+  <section class="section avantages" id="avantages">
+    <div class="contenu">
+      <div class="avantages-haut">
+        <div class="apparait">
+          <span class="sur-titre">Pourquoi nous confier le ménage&nbsp;?</span>
+          <h2>Un service pour <em>tout le monde</em>, pas seulement pour nos aînés</h2>
+          <p class="chapo" style="margin-bottom:20px">L'ADMR est connue pour l'accompagnement des personnes âgées ou en situation de handicap. Mais nul besoin d'être âgé ou dépendant pour faire appel à nous&nbsp;: notre ménage de confort s'adresse à tous les habitants de Côte-d'Or qui manquent de temps.</p>
+          <ul class="pour-qui">
+            <li>Actifs</li><li>Familles</li><li>Jeunes parents</li><li>Retraités</li><li>Personnes seules</li>
+          </ul>
+          <ul class="prestations">
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg>Nettoyage des sols</li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg>Dépoussiérage</li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg>Entretien de la cuisine</li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg>Sanitaires</li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg>Repassage</li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg>Selon vos besoins</li>
+          </ul>
+        </div>
+        <div class="avantages-photo apparait">
+          <img src="img/avantages.jpg" alt="Seau de produits ménagers, chiffon et gants" loading="lazy" width="1200" height="801">
+        </div>
+      </div>
+
+      <div class="grille-avantages">
+        <article class="carte-avantage apparait">
+          <div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg></div>
+          <h3>Du temps libre retrouvé</h3>
+          <p>Fini les week-ends passés à faire le ménage. Profitez de vos proches, de vos loisirs, de vous.</p>
+        </article>
+        <article class="carte-avantage apparait">
+          <div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l8 4v5c0 5-3.5 8-8 9-4.5-1-8-4-8-9V7l8-4z"/><path d="M9 12l2 2 4-4"/></svg></div>
+          <h3>Des professionnels formés</h3>
+          <p>Nos intervenants sont formés en conditions réelles dans notre appartement pédagogique.</p>
+        </article>
+        <article class="carte-avantage apparait">
+          <div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 21h18"/><path d="M5 21V7l7-4 7 4v14"/><path d="M9 21v-6h6v6"/></svg></div>
+          <h3>Sur mesure</h3>
+          <p>Chaque prestation est définie avec vous, selon votre logement, vos habitudes et vos attentes.</p>
+        </article>
+        <article class="carte-avantage apparait">
+          <div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M16 3v4M8 3v4M3 10h18"/></svg></div>
+          <h3>Régulier ou ponctuel</h3>
+          <p>Quelques heures par semaine, avant de recevoir vos proches ou lors d'une période chargée.</p>
+        </article>
+        <article class="carte-avantage apparait">
+          <div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21s-7-6.3-7-11a7 7 0 0 1 14 0c0 4.7-7 11-7 11z"/><circle cx="12" cy="10" r="2.5"/></svg></div>
+          <h3>Un réseau de proximité</h3>
+          <p>1<sup>er</sup> réseau national associatif de service à la personne, implanté partout en Côte-d'Or.</p>
+        </article>
+        <article class="carte-avantage apparait">
+          <div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.7l-1-1.1a5.5 5.5 0 0 0-7.8 7.8l1 1.1L12 21l7.8-7.5 1-1.1a5.5 5.5 0 0 0 0-7.8z"/></svg></div>
+          <h3>De la sérénité</h3>
+          <p>Au-delà du ménage, nous vous apportons de la tranquillité d'esprit. Étude de votre demande sans engagement.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== 2. CRÉDIT D'IMPÔT ===================== -->
+  <section class="section impot" id="credit-impot">
+    <div class="impot-fond" aria-hidden="true"></div>
+    <div class="contenu">
+      <div class="impot-grille">
+        <div class="apparait">
+          <span class="sur-titre" style="color:#FFD9A0">Avantage fiscal</span>
+          <div class="gros-chiffre">50&nbsp;%<small>de crédit d'impôt</small></div>
+          <h2 style="margin-top:22px">Le ménage, <em>deux fois plus accessible</em></h2>
+          <p>Nos prestations de ménage ouvrent droit à un crédit d'impôt de 50&nbsp;% des sommes engagées, selon la législation en vigueur.</p>
+          <ul>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg><span>Pour 100&nbsp;€ dépensés, 50&nbsp;€ vous reviennent.</span></li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg><span>C'est un <strong>crédit</strong> d'impôt&nbsp;: il bénéficie aussi aux foyers non imposables.</span></li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg><span>Une attestation fiscale annuelle vous est remise pour votre déclaration.</span></li>
+          </ul>
+        </div>
+
+        <div class="simulateur apparait" aria-labelledby="sim-titre">
+          <h3 id="sim-titre">Estimez votre coût réel</h3>
+          <p class="aide">Faites glisser le curseur selon votre budget ménage mensuel.</p>
+          <label class="sim-label" for="sim-montant">Dépense mensuelle <output id="sim-sortie" for="sim-montant">200 €</output></label>
+          <input type="range" id="sim-montant" min="20" max="800" step="10" value="200">
+          <div class="sim-resultats">
+            <div class="sim-case credit"><span>Crédit d'impôt / an</span><strong id="sim-credit">1 200 €</strong></div>
+            <div class="sim-case reel"><span>Coût réel / mois</span><strong id="sim-reel">100 €</strong></div>
+          </div>
+          <p class="mention">Simulation indicative. Crédit d'impôt de 50&nbsp;% des dépenses de services à la personne (art. 199 sexdecies du CGI), dans la limite d'un plafond annuel de dépenses de 12&nbsp;000&nbsp;€, majoré selon la composition du foyer. Selon la législation en vigueur.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== 3. APPARTEMENT PÉDAGOGIQUE ===================== -->
+  <section class="section formation" id="formation">
+    <div class="contenu">
+      <div class="formation-grille">
+        <div class="formation-photos apparait">
+          <div class="p1"><img src="img/formation.jpg" alt="Un intervenant nettoie un rebord de fenêtre avec des gants" loading="lazy" width="1200" height="801"></div>
+          <div class="p2"><img src="img/accompagnement.jpg" alt="Un intervenant échange avec le bénéficiaire en nettoyant la cuisine" loading="lazy" width="1200" height="800"></div>
+          <span class="pastille"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 10L12 5 2 10l10 5 10-5z"/><path d="M6 12v5c3 2 9 2 12 0v-5"/></svg>Formés en conditions réelles</span>
+        </div>
+        <div class="apparait">
+          <span class="sur-titre">Notre appartement pédagogique</span>
+          <h2>Des intervenants formés <em>avant d'entrer chez vous</em></h2>
+          <p class="chapo" style="margin-bottom:0">L'ADMR de Côte-d'Or dispose d'un appartement pédagogique&nbsp;: un vrai logement, équipé comme le vôtre, dans lequel nos salariés apprennent et perfectionnent les bons gestes. Ils arrivent chez vous préparés, efficaces et respectueux de votre intérieur.</p>
+          <ul class="etapes">
+            <li><span class="num">1</span><div><strong>Les bonnes techniques</strong><span>Produits et méthodes adaptés à chaque pièce et à chaque surface.</span></div></li>
+            <li><span class="num">2</span><div><strong>Hygiène et sécurité</strong><span>Gestes et postures, utilisation sûre des produits, prévention des risques.</span></div></li>
+            <li><span class="num">3</span><div><strong>Le respect de votre intérieur</strong><span>Organisation, discrétion et écoute de vos habitudes.</span></div></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== 4. ON VOUS RAPPELLE ===================== -->
+  <section class="section rappel" id="rappel">
+    <div class="contenu">
+      <div class="rappel-grille">
+        <div class="apparait">
+          <span class="sur-titre" style="color:#fff">Gratuit et sans engagement</span>
+          <h2>Laissez-nous vos coordonnées, <em>on vous rappelle</em></h2>
+          <p style="font-size:1.1rem;margin:0">Nos équipes étudient votre demande, répondent à vos questions et vous proposent une solution personnalisée.</p>
+          <ul class="rappel-arg">
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg>Réponse rapide de nos équipes</li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg>Étude personnalisée de votre besoin</li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg>Aucun engagement</li>
+          </ul>
+          <p class="rappel-tel">Vous préférez appeler&nbsp;? <a href="tel:+33380514751">03 80 51 47 51</a><br>ou écrire à <a href="mailto:accueil@admr21.fr" style="font-size:1rem">accueil@admr21.fr</a></p>
+        </div>
+
+        <form class="formulaire apparait" id="form-rappel" novalidate>
+          <h3>Être rappelé</h3>
+          <div class="champs-ligne">
+            <div class="champ"><label for="f-nom">Nom *</label><input id="f-nom" name="Nom" type="text" autocomplete="family-name" required></div>
+            <div class="champ"><label for="f-prenom">Prénom *</label><input id="f-prenom" name="Prénom" type="text" autocomplete="given-name" required></div>
+          </div>
+          <div class="champ"><label for="f-tel">Téléphone *</label><input id="f-tel" name="Téléphone" type="tel" autocomplete="tel" inputmode="tel" placeholder="06 12 34 56 78" pattern="^(?:\+33\s?|0)[1-9](?:[\s.\-]?\d{2}){4}$" required></div>
+          <div class="piege" aria-hidden="true"><label>Ne pas remplir <input type="text" name="_honey" tabindex="-1" autocomplete="off"></label></div>
+          <label class="consent"><input type="checkbox" id="f-consent" required><span>J'accepte que l'ADMR de Côte-d'Or utilise ces informations pour me recontacter au sujet de ma demande. Elles ne sont ni cédées ni utilisées à d'autres fins.</span></label>
+          <button class="btn btn-vert" type="submit" id="f-envoyer">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 2L11 13"/><path d="M22 2l-7 20-4-9-9-4 20-7z"/></svg>
+            Je souhaite être rappelé
+          </button>
+          <div class="msg-form" id="f-message" role="status" aria-live="polite"></div>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== 5. NOS ASSOCIATIONS ===================== -->
+  <section class="section assos" id="associations">
+    <div class="contenu">
+      <span class="sur-titre">Près de chez vous</span>
+      <h2>Nos <em>associations</em></h2>
+      <p class="chapo">Retrouvez les coordonnées et horaires des associations locales ADMR de Côte-d'Or.</p>
+
+      <div class="barre-recherche">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="7"/><path d="M21 21l-4.3-4.3"/></svg>
+        <input type="search" id="recherche" placeholder="Rechercher une association (ville, adresse…)" aria-label="Rechercher une association">
+      </div>
+      <p class="aucun-resultat" id="aucun-resultat">Aucune association ne correspond à votre recherche.</p>
+
+      <div class="grille-assos" id="grille-assos">
+      <article class="asso-carte" data-recherche="admr d'arnay-le-duc 7 rue président carnot, 21230 arnay-le-duc">
+        <h3 class="asso-nom">ADMR d'Arnay-le-Duc</h3>
+        <p class="asso-adr">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21s-7-6.3-7-11a7 7 0 0 1 14 0c0 4.7-7 11-7 11z"/><circle cx="12" cy="10" r="2.5"/></svg>
+          7 Rue Président Carnot, 21230 Arnay-le-Duc
+        </p>
+        <p class="asso-tel">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L14 12l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 2 6a2 2 0 0 1 2-2z"/></svg>
+          <a href="tel:+33380848739">03 80 84 87 39</a>
+        </p>
+        <div class="asso-horaires">
+          <div class="h-titre">Horaires d'ouverture</div>
+          <div class="h-ligne"><span class="h-jour">Lundi</span><span class="h-val">9h – 12h, 14h – 16h</span></div>
+          <div class="h-ligne"><span class="h-jour">Mardi</span><span class="h-val">9h – 12h, 14h – 16h</span></div>
+          <div class="h-ligne"><span class="h-jour">Mercredi</span><span class="h-val">9h – 12h</span></div>
+          <div class="h-ligne"><span class="h-jour">Jeudi</span><span class="h-val">9h – 12h, 14h – 16h</span></div>
+          <div class="h-ligne ferme"><span class="h-jour">Vendredi</span><span class="h-val">Fermé</span></div>
+          <div class="h-ligne ferme"><span class="h-jour">Samedi</span><span class="h-val">Fermé</span></div>
+          <div class="h-ligne ferme"><span class="h-jour">Dimanche</span><span class="h-val">Fermé</span></div>
+          <div class="h-permanence">
+            <div class="h-perm-titre"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L14 12l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 2 6a2 2 0 0 1 2-2z"/></svg> Permanence téléphonique</div>
+            <div class="h-perm-detail">Vendredi : 9h – 12h, 14h – 16h</div>
+          </div>
+        </div>
+        <div class="asso-actions">
+          <a class="asso-itineraire" href="https://g.page/r/CXEPtCFTbEXzEBM" target="_blank" rel="noopener">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 11l19-9-9 19-2-8-8-2z"/></svg>
+            Voir l'itinéraire
+          </a>
+          <a class="asso-mail" href="mailto:arnayleduc@admr21.fr">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7l9 6 9-6"/></svg>
+            Envoyer un mail
+          </a>
+        </div>
+      </article>
+      <article class="asso-carte" data-recherche="admr d'auxonne 60 rue antoine masson, 21130 auxonne">
+        <h3 class="asso-nom">ADMR d'Auxonne</h3>
+        <p class="asso-adr">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21s-7-6.3-7-11a7 7 0 0 1 14 0c0 4.7-7 11-7 11z"/><circle cx="12" cy="10" r="2.5"/></svg>
+          60 Rue Antoine Masson, 21130 Auxonne
+        </p>
+        <p class="asso-tel">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L14 12l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 2 6a2 2 0 0 1 2-2z"/></svg>
+          <a href="tel:+33380655334">03 80 65 53 34</a>
+        </p>
+        <div class="asso-horaires">
+          <div class="h-titre">Horaires d'ouverture</div>
+          <div class="h-ligne"><span class="h-jour">Lundi</span><span class="h-val">9h – 12h, 13h30 – 16h</span></div>
+          <div class="h-ligne"><span class="h-jour">Mardi</span><span class="h-val">9h – 12h, 13h30 – 16h</span></div>
+          <div class="h-ligne ferme"><span class="h-jour">Mercredi</span><span class="h-val">Fermé</span></div>
+          <div class="h-ligne"><span class="h-jour">Jeudi</span><span class="h-val">9h – 12h, 13h30 – 16h</span></div>
+          <div class="h-ligne ferme"><span class="h-jour">Vendredi</span><span class="h-val">Fermé</span></div>
+          <div class="h-ligne ferme"><span class="h-jour">Samedi</span><span class="h-val">Fermé</span></div>
+          <div class="h-ligne ferme"><span class="h-jour">Dimanche</span><span class="h-val">Fermé</span></div>
+        </div>
+        <div class="asso-actions">
+          <a class="asso-itineraire" href="https://g.page/r/CUQdTgYT5HFoEBM/" target="_blank" rel="noopener">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 11l19-9-9 19-2-8-8-2z"/></svg>
+            Voir l'itinéraire
+          </a>
+          <a class="asso-mail" href="mailto:genlisauxonne@admr21.fr">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7l9 6 9-6"/></svg>
+            Envoyer un mail
+          </a>
+        </div>
+      </article>
+      <article class="asso-carte" data-recherche="admr de beaune 2b av. roger duchet, 21200 beaune">
+        <h3 class="asso-nom">ADMR Sud Côte d'Or</h3>
+        <p class="asso-adr">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21s-7-6.3-7-11a7 7 0 0 1 14 0c0 4.7-7 11-7 11z"/><circle cx="12" cy="10" r="2.5"/></svg>
+          2B Av. Roger Duchet, 21200 Beaune
+        </p>
+        <p class="asso-tel">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L14 12l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 2 6a2 2 0 0 1 2-2z"/></svg>
+          <a href="tel:+33380263710">03 80 26 37 10</a>
+        </p>
+        <div class="asso-horaires">
+          <div class="h-titre">Horaires d'ouverture</div>
+          <div class="h-ligne"><span class="h-jour">Lundi</span><span class="h-val">9h – 12h, 14h – 16h</span></div>
+          <div class="h-ligne"><span class="h-jour">Mardi</span><span class="h-val">9h – 12h, 14h – 16h</span></div>
+          <div class="h-ligne"><span class="h-jour">Mercredi</span><span class="h-val">9h – 12h, 14h – 16h</span></div>
+          <div class="h-ligne"><span class="h-jour">Jeudi</span><span class="h-val">9h – 12h, 14h – 16h</span></div>
+          <div class="h-ligne"><span class="h-jour">Vendredi</span><span class="h-val">9h – 12h, 14h – 16h</span></div>
+          <div class="h-ligne ferme"><span class="h-jour">Samedi</span><span class="h-val">Fermé</span></div>
+          <div class="h-ligne ferme"><span class="h-jour">Dimanche</span><span class="h-val">Fermé</span></div>
+        </div>
+        <div class="asso-actions">
+          <a class="asso-itineraire" href="https://g.page/r/CdXdV2lmMwAlEBM" target="_blank" rel="noopener">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 11l19-9-9 19-2-8-8-2z"/></svg>
+            Voir l'itinéraire
+          </a>
+          <a class="asso-mail" href="mailto:sudcotedor@admr21.fr">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7l9 6 9-6"/></svg>
+            Envoyer un mail
+          </a>
+        </div>
+      </article>
+      <article class="asso-carte" data-recherche="admr de dijon 60 av. du 14 juillet bât f, 21300 chenôve">
+        <h3 class="asso-nom">ADMR de Dijon</h3>
+        <p class="asso-adr">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21s-7-6.3-7-11a7 7 0 0 1 14 0c0 4.7-7 11-7 11z"/><circle cx="12" cy="10" r="2.5"/></svg>
+          60 Av. du 14 Juillet bât F, 21300 Chenôve
+        </p>
+        <p class="asso-tel">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L14 12l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 2 6a2 2 0 0 1 2-2z"/></svg>
+          <a href="tel:+33380516990">03 80 51 69 90</a>
+        </p>
+        <div class="asso-horaires">
+          <div class="h-titre">Horaires d'ouverture</div>
+          <div class="h-ligne"><span class="h-jour">Lundi</span><span class="h-val">9h – 12h, 14h – 16h</span></div>
+          <div class="h-ligne"><span class="h-jour">Mardi</span><span class="h-val">9h – 12h, 14h – 16h</span></div>
+          <div class="h-ligne"><span class="h-jour">Mercredi</span><span class="h-val">9h – 12h, 14h – 16h</span></div>
+          <div class="h-ligne"><span class="h-jour">Jeudi</span><span class="h-val">9h – 12h, 14h – 16h</span></div>
+          <div class="h-ligne"><span class="h-jour">Vendredi</span><span class="h-val">9h – 12h, 14h – 16h</span></div>
+          <div class="h-ligne ferme"><span class="h-jour">Samedi</span><span class="h-val">Fermé</span></div>
+          <div class="h-ligne ferme"><span class="h-jour">Dimanche</span><span class="h-val">Fermé</span></div>
+        </div>
+        <div class="asso-actions">
+          <a class="asso-itineraire" href="https://g.page/r/CW8_mLjhV0mSEBM" target="_blank" rel="noopener">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 11l19-9-9 19-2-8-8-2z"/></svg>
+            Voir l'itinéraire
+          </a>
+          <a class="asso-mail" href="mailto:dijonmetropole@admr21.fr">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7l9 6 9-6"/></svg>
+            Envoyer un mail
+          </a>
+        </div>
+      </article>
+      <article class="asso-carte" data-recherche="admr du pays châtillonnais 2 bis rue de la libération, 21400 châtillon-sur-seine">
+        <h3 class="asso-nom">ADMR du Pays Châtillonnais</h3>
+        <p class="asso-adr">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21s-7-6.3-7-11a7 7 0 0 1 14 0c0 4.7-7 11-7 11z"/><circle cx="12" cy="10" r="2.5"/></svg>
+          2 Bis Rue de la Libération, 21400 Châtillon-sur-Seine
+        </p>
+        <p class="asso-tel">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L14 12l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 2 6a2 2 0 0 1 2-2z"/></svg>
+          <a href="tel:+33380910916">03 80 91 09 16</a>
+        </p>
+        <div class="asso-horaires">
+          <div class="h-titre">Horaires d'ouverture</div>
+          <div class="h-ligne"><span class="h-jour">Lundi</span><span class="h-val">8h30 – 12h, 13h30 – 17h</span></div>
+          <div class="h-ligne"><span class="h-jour">Mardi</span><span class="h-val">8h30 – 12h, 13h30 – 17h</span></div>
+          <div class="h-ligne"><span class="h-jour">Mercredi</span><span class="h-val">8h30 – 12h, 13h30 – 17h</span></div>
+          <div class="h-ligne"><span class="h-jour">Jeudi</span><span class="h-val">8h30 – 12h, 13h30 – 17h</span></div>
+          <div class="h-ligne"><span class="h-jour">Vendredi</span><span class="h-val">8h30 – 12h, 13h30 – 17h</span></div>
+          <div class="h-ligne ferme"><span class="h-jour">Samedi</span><span class="h-val">Fermé</span></div>
+          <div class="h-ligne ferme"><span class="h-jour">Dimanche</span><span class="h-val">Fermé</span></div>
+        </div>
+        <div class="asso-actions">
+          <a class="asso-itineraire" href="https://g.page/r/CX4AGwUxFAo4EBM" target="_blank" rel="noopener">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 11l19-9-9 19-2-8-8-2z"/></svg>
+            Voir l'itinéraire
+          </a>
+          <a class="asso-mail" href="mailto:payschatillonnais@admr21.fr">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7l9 6 9-6"/></svg>
+            Envoyer un mail
+          </a>
+        </div>
+      </article>
+      <article class="asso-carte" data-recherche="admr de genlis 4 rue de la gare, 21110 genlis">
+        <h3 class="asso-nom">ADMR de Genlis</h3>
+        <p class="asso-adr">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21s-7-6.3-7-11a7 7 0 0 1 14 0c0 4.7-7 11-7 11z"/><circle cx="12" cy="10" r="2.5"/></svg>
+          4 Rue de la Gare, 21110 Genlis
+        </p>
+        <p class="asso-tel">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L14 12l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 2 6a2 2 0 0 1 2-2z"/></svg>
+          <a href="tel:+33380479536">03 80 47 95 36</a>
+        </p>
+        <div class="asso-horaires">
+          <div class="h-titre">Horaires d'ouverture</div>
+          <div class="h-ligne"><span class="h-jour">Lundi</span><span class="h-val">9h – 12h, 13h30 – 16h</span></div>
+          <div class="h-ligne"><span class="h-jour">Mardi</span><span class="h-val">9h – 12h, 13h30 – 16h</span></div>
+          <div class="h-ligne ferme"><span class="h-jour">Mercredi</span><span class="h-val">Fermé</span></div>
+          <div class="h-ligne"><span class="h-jour">Jeudi</span><span class="h-val">9h – 12h, 13h30 – 16h</span></div>
+          <div class="h-ligne ferme"><span class="h-jour">Vendredi</span><span class="h-val">Fermé</span></div>
+          <div class="h-ligne ferme"><span class="h-jour">Samedi</span><span class="h-val">Fermé</span></div>
+          <div class="h-ligne ferme"><span class="h-jour">Dimanche</span><span class="h-val">Fermé</span></div>
+        </div>
+        <div class="asso-actions">
+          <a class="asso-itineraire" href="https://g.page/r/CQJfh7SRFZIREBM" target="_blank" rel="noopener">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 11l19-9-9 19-2-8-8-2z"/></svg>
+            Voir l'itinéraire
+          </a>
+          <a class="asso-mail" href="mailto:genlisauxonne@admr21.fr">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7l9 6 9-6"/></svg>
+            Envoyer un mail
+          </a>
+        </div>
+      </article>
+      <article class="asso-carte" data-recherche="admr de gevrey-chambertin 10 rue mal de lattre de tassigny, 21220 gevrey-chambertin">
+        <h3 class="asso-nom">ADMR de Gevrey-Chambertin</h3>
+        <p class="asso-adr">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21s-7-6.3-7-11a7 7 0 0 1 14 0c0 4.7-7 11-7 11z"/><circle cx="12" cy="10" r="2.5"/></svg>
+          10 Rue Mal de Lattre de Tassigny, 21220 Gevrey-Chambertin
+        </p>
+        <p class="asso-tel">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L14 12l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 2 6a2 2 0 0 1 2-2z"/></svg>
+          <a href="tel:+33380397582">03 80 39 75 82</a>
+        </p>
+        <div class="asso-horaires">
+          <div class="h-titre">Horaires d'ouverture</div>
+          <div class="h-ligne"><span class="h-jour">Lundi</span><span class="h-val">9h – 12h, 14h – 16h</span></div>
+          <div class="h-ligne"><span class="h-jour">Mardi</span><span class="h-val">9h – 12h, 14h – 16h</span></div>
+          <div class="h-ligne"><span class="h-jour">Mercredi</span><span class="h-val">9h – 12h, 14h – 16h</span></div>
+          <div class="h-ligne"><span class="h-jour">Jeudi</span><span class="h-val">9h – 12h, 14h – 16h</span></div>
+          <div class="h-ligne"><span class="h-jour">Vendredi</span><span class="h-val">9h – 12h, 14h – 16h</span></div>
+          <div class="h-ligne ferme"><span class="h-jour">Samedi</span><span class="h-val">Fermé</span></div>
+          <div class="h-ligne ferme"><span class="h-jour">Dimanche</span><span class="h-val">Fermé</span></div>
+        </div>
+        <div class="asso-actions">
+          <a class="asso-itineraire" href="https://g.page/r/CYSeHBEh1V6aEBM" target="_blank" rel="noopener">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 11l19-9-9 19-2-8-8-2z"/></svg>
+            Voir l'itinéraire
+          </a>
+          <a class="asso-mail" href="mailto:gevreynuits@admr21.fr">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7l9 6 9-6"/></svg>
+            Envoyer un mail
+          </a>
+        </div>
+      </article>
+      <article class="asso-carte" data-recherche="admr d'is-sur-tille 16 pl. du général leclerc, 21120 is-sur-tille">
+        <h3 class="asso-nom">ADMR 3 Rivières</h3>
+        <p class="asso-adr">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21s-7-6.3-7-11a7 7 0 0 1 14 0c0 4.7-7 11-7 11z"/><circle cx="12" cy="10" r="2.5"/></svg>
+          16 Pl. du Général Leclerc, 21120 Is-sur-Tille
+        </p>
+        <p class="asso-tel">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L14 12l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 2 6a2 2 0 0 1 2-2z"/></svg>
+          <a href="tel:+33380855112">03 80 85 51 12</a>
+        </p>
+        <div class="asso-horaires">
+          <div class="h-titre">Horaires d'ouverture</div>
+          <div class="h-ligne"><span class="h-jour">Lundi</span><span class="h-val">9h – 12h, 13h30 – 16h</span></div>
+          <div class="h-ligne"><span class="h-jour">Mardi</span><span class="h-val">9h – 12h, 13h30 – 16h</span></div>
+          <div class="h-ligne ferme"><span class="h-jour">Mercredi</span><span class="h-val">Fermé</span></div>
+          <div class="h-ligne"><span class="h-jour">Jeudi</span><span class="h-val">9h – 12h, 13h30 – 16h</span></div>
+          <div class="h-ligne"><span class="h-jour">Vendredi</span><span class="h-val">9h – 12h, 13h30 – 16h</span></div>
+          <div class="h-ligne ferme"><span class="h-jour">Samedi</span><span class="h-val">Fermé</span></div>
+          <div class="h-ligne ferme"><span class="h-jour">Dimanche</span><span class="h-val">Fermé</span></div>
+          <div class="h-permanence">
+            <div class="h-perm-titre"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L14 12l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 2 6a2 2 0 0 1 2-2z"/></svg> Permanence téléphonique</div>
+            <div class="h-perm-detail">Mercredi : 9h – 12h, 14h – 16h</div>
+          </div>
+        </div>
+        <div class="asso-actions">
+          <a class="asso-itineraire" href="https://g.page/r/CT5Up-LU8-ThEBM" target="_blank" rel="noopener">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 11l19-9-9 19-2-8-8-2z"/></svg>
+            Voir l'itinéraire
+          </a>
+          <a class="asso-mail" href="mailto:3rivieres@admr21.fr">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7l9 6 9-6"/></svg>
+            Envoyer un mail
+          </a>
+        </div>
+      </article>
+      <article class="asso-carte" data-recherche="admr de laignes 3 grande rue porte de la croix, 21330 laignes">
+        <h3 class="asso-nom">ADMR de Laignes</h3>
+        <p class="asso-adr">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21s-7-6.3-7-11a7 7 0 0 1 14 0c0 4.7-7 11-7 11z"/><circle cx="12" cy="10" r="2.5"/></svg>
+          3 Grande rue Porte de La Croix, 21330 Laignes
+        </p>
+        <p class="asso-tel">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L14 12l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 2 6a2 2 0 0 1 2-2z"/></svg>
+          <a href="tel:+33380814873">03 80 81 48 73</a>
+        </p>
+        <div class="asso-horaires">
+          <div class="h-titre">Horaires d'ouverture</div>
+          <div class="h-ligne"><span class="h-jour">Lundi</span><span class="h-val">13h30 – 17h</span></div>
+          <div class="h-ligne ferme"><span class="h-jour">Mardi</span><span class="h-val">Fermé</span></div>
+          <div class="h-ligne ferme"><span class="h-jour">Mercredi</span><span class="h-val">Fermé</span></div>
+          <div class="h-ligne ferme"><span class="h-jour">Jeudi</span><span class="h-val">Fermé</span></div>
+          <div class="h-ligne ferme"><span class="h-jour">Vendredi</span><span class="h-val">Fermé</span></div>
+          <div class="h-ligne ferme"><span class="h-jour">Samedi</span><span class="h-val">Fermé</span></div>
+          <div class="h-ligne ferme"><span class="h-jour">Dimanche</span><span class="h-val">Fermé</span></div>
+        </div>
+        <div class="asso-actions">
+          <a class="asso-itineraire" href="https://g.page/r/CZNzk7oIOVDEEBM" target="_blank" rel="noopener">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 11l19-9-9 19-2-8-8-2z"/></svg>
+            Voir l'itinéraire
+          </a>
+          <a class="asso-mail" href="mailto:laignes@admr21.fr">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7l9 6 9-6"/></svg>
+            Envoyer un mail
+          </a>
+        </div>
+      </article>
+      <article class="asso-carte" data-recherche="admr de liernais rue de la place martin dosse, 21430 liernais">
+        <h3 class="asso-nom">ADMR de Liernais</h3>
+        <p class="asso-adr">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21s-7-6.3-7-11a7 7 0 0 1 14 0c0 4.7-7 11-7 11z"/><circle cx="12" cy="10" r="2.5"/></svg>
+          Rue de la Place Martin Dosse, 21430 Liernais
+        </p>
+        <p class="asso-tel">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L14 12l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 2 6a2 2 0 0 1 2-2z"/></svg>
+          <a href="tel:+33380844956">03 80 84 49 56</a>
+        </p>
+        <div class="asso-horaires">
+          <div class="h-titre">Horaires d'ouverture</div>
+          <div class="h-ligne"><span class="h-jour">Lundi</span><span class="h-val">7h45 – 12h, 13h – 16h</span></div>
+          <div class="h-ligne"><span class="h-jour">Mardi</span><span class="h-val">7h45 – 12h, 13h – 16h</span></div>
+          <div class="h-ligne ferme"><span class="h-jour">Mercredi</span><span class="h-val">Fermé</span></div>
+          <div class="h-ligne"><span class="h-jour">Jeudi</span><span class="h-val">7h45 – 12h, 13h – 16h</span></div>
+          <div class="h-ligne ferme"><span class="h-jour">Vendredi</span><span class="h-val">Fermé</span></div>
+          <div class="h-ligne ferme"><span class="h-jour">Samedi</span><span class="h-val">Fermé</span></div>
+          <div class="h-ligne ferme"><span class="h-jour">Dimanche</span><span class="h-val">Fermé</span></div>
+        </div>
+        <div class="asso-actions">
+          <a class="asso-itineraire" href="https://g.page/r/CWze-0f1SzHBEBM" target="_blank" rel="noopener">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 11l19-9-9 19-2-8-8-2z"/></svg>
+            Voir l'itinéraire
+          </a>
+          <a class="asso-mail" href="mailto:liernais@admr21.fr">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7l9 6 9-6"/></svg>
+            Envoyer un mail
+          </a>
+        </div>
+      </article>
+      <article class="asso-carte" data-recherche="admr de mirebeau-sur-bèze 8 pl. général viard, 21310 mirebeau-sur-bèze">
+        <h3 class="asso-nom">ADMR de Mirebeau-sur-Bèze</h3>
+        <p class="asso-adr">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21s-7-6.3-7-11a7 7 0 0 1 14 0c0 4.7-7 11-7 11z"/><circle cx="12" cy="10" r="2.5"/></svg>
+          8 Pl. Général Viard, 21310 Mirebeau-sur-Bèze
+        </p>
+        <p class="asso-tel">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L14 12l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 2 6a2 2 0 0 1 2-2z"/></svg>
+          <a href="tel:+33380365774">03 80 36 57 74</a>
+        </p>
+        <div class="asso-horaires">
+          <div class="h-titre">Horaires d'ouverture</div>
+          <div class="h-ligne"><span class="h-jour">Lundi</span><span class="h-val">9h – 12h, 14h – 16h</span></div>
+          <div class="h-ligne"><span class="h-jour">Mardi</span><span class="h-val">9h – 12h, 14h – 16h</span></div>
+          <div class="h-ligne"><span class="h-jour">Mercredi</span><span class="h-val">9h – 12h, 14h – 16h</span></div>
+          <div class="h-ligne"><span class="h-jour">Jeudi</span><span class="h-val">9h – 12h, 14h – 16h</span></div>
+          <div class="h-ligne"><span class="h-jour">Vendredi</span><span class="h-val">9h – 12h, 14h – 16h</span></div>
+          <div class="h-ligne ferme"><span class="h-jour">Samedi</span><span class="h-val">Fermé</span></div>
+          <div class="h-ligne ferme"><span class="h-jour">Dimanche</span><span class="h-val">Fermé</span></div>
+        </div>
+        <div class="asso-actions">
+          <a class="asso-itineraire" href="https://g.page/r/Cej_oTkPU3vxEBM" target="_blank" rel="noopener">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 11l19-9-9 19-2-8-8-2z"/></svg>
+            Voir l'itinéraire
+          </a>
+          <a class="asso-mail" href="mailto:mirebeau@admr21.fr">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7l9 6 9-6"/></svg>
+            Envoyer un mail
+          </a>
+        </div>
+      </article>
+      <article class="asso-carte" data-recherche="admr de montbard 3 rue carnot, 21500 montbard">
+        <h3 class="asso-nom">ADMR de Montbard</h3>
+        <p class="asso-adr">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21s-7-6.3-7-11a7 7 0 0 1 14 0c0 4.7-7 11-7 11z"/><circle cx="12" cy="10" r="2.5"/></svg>
+          3 Rue Carnot, 21500 Montbard
+        </p>
+        <p class="asso-tel">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L14 12l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 2 6a2 2 0 0 1 2-2z"/></svg>
+          <a href="tel:+33380963370">03 80 96 33 70</a>
+        </p>
+        <div class="asso-horaires">
+          <div class="h-titre">Horaires d'ouverture</div>
+          <div class="h-ligne"><span class="h-jour">Lundi</span><span class="h-val">9h – 12h, 14h – 16h</span></div>
+          <div class="h-ligne"><span class="h-jour">Mardi</span><span class="h-val">9h – 12h, 14h – 16h</span></div>
+          <div class="h-ligne"><span class="h-jour">Mercredi</span><span class="h-val">9h – 12h, 14h – 16h</span></div>
+          <div class="h-ligne"><span class="h-jour">Jeudi</span><span class="h-val">9h – 12h, 14h – 16h</span></div>
+          <div class="h-ligne"><span class="h-jour">Vendredi</span><span class="h-val">9h – 12h, 14h – 16h</span></div>
+          <div class="h-ligne ferme"><span class="h-jour">Samedi</span><span class="h-val">Fermé</span></div>
+          <div class="h-ligne ferme"><span class="h-jour">Dimanche</span><span class="h-val">Fermé</span></div>
+        </div>
+        <div class="asso-actions">
+          <a class="asso-itineraire" href="https://g.page/r/CXC4ZtYx4STdEBM" target="_blank" rel="noopener">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 11l19-9-9 19-2-8-8-2z"/></svg>
+            Voir l'itinéraire
+          </a>
+          <a class="asso-mail" href="mailto:montbardsemur@admr21.fr">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7l9 6 9-6"/></svg>
+            Envoyer un mail
+          </a>
+        </div>
+      </article>
+      <article class="asso-carte" data-recherche="admr de semur-en-auxois 2ter av. de ciney, 21140 semur-en-auxois">
+        <h3 class="asso-nom">ADMR de Semur-en-Auxois</h3>
+        <p class="asso-adr">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21s-7-6.3-7-11a7 7 0 0 1 14 0c0 4.7-7 11-7 11z"/><circle cx="12" cy="10" r="2.5"/></svg>
+          2ter Av. de Ciney, 21140 Semur-en-Auxois
+        </p>
+        <p class="asso-tel">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L14 12l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 2 6a2 2 0 0 1 2-2z"/></svg>
+          <a href="tel:+33380915822">03 80 91 58 22</a>
+        </p>
+        <div class="asso-horaires">
+          <div class="h-titre">Horaires d'ouverture</div>
+          <div class="h-ligne"><span class="h-jour">Lundi</span><span class="h-val">9h – 12h, 14h – 16h</span></div>
+          <div class="h-ligne"><span class="h-jour">Mardi</span><span class="h-val">9h – 12h, 14h – 16h</span></div>
+          <div class="h-ligne"><span class="h-jour">Mercredi</span><span class="h-val">9h – 12h, 14h – 16h</span></div>
+          <div class="h-ligne"><span class="h-jour">Jeudi</span><span class="h-val">9h – 12h, 14h – 16h</span></div>
+          <div class="h-ligne"><span class="h-jour">Vendredi</span><span class="h-val">9h – 12h, 14h – 16h</span></div>
+          <div class="h-ligne ferme"><span class="h-jour">Samedi</span><span class="h-val">Fermé</span></div>
+          <div class="h-ligne ferme"><span class="h-jour">Dimanche</span><span class="h-val">Fermé</span></div>
+        </div>
+        <div class="asso-actions">
+          <a class="asso-itineraire" href="https://g.page/r/CZvf5xNQdZkEEBM" target="_blank" rel="noopener">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 11l19-9-9 19-2-8-8-2z"/></svg>
+            Voir l'itinéraire
+          </a>
+          <a class="asso-mail" href="mailto:montbardsemur@admr21.fr">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7l9 6 9-6"/></svg>
+            Envoyer un mail
+          </a>
+        </div>
+      </article>
+      <article class="asso-carte" data-recherche="admr de nuits-saint-georges 3 rue jean moulin, 21700 nuits-saint-georges">
+        <h3 class="asso-nom">ADMR de Nuits-Saint-Georges</h3>
+        <p class="asso-adr">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21s-7-6.3-7-11a7 7 0 0 1 14 0c0 4.7-7 11-7 11z"/><circle cx="12" cy="10" r="2.5"/></svg>
+          3 Rue Jean Moulin, 21700 Nuits-Saint-Georges
+        </p>
+        <p class="asso-tel">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L14 12l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 2 6a2 2 0 0 1 2-2z"/></svg>
+          <a href="tel:+33380613730">03 80 61 37 30</a>
+        </p>
+        <div class="asso-horaires">
+          <div class="h-titre">Horaires d'ouverture</div>
+          <div class="h-ligne"><span class="h-jour">Lundi</span><span class="h-val">9h – 12h, 14h – 16h</span></div>
+          <div class="h-ligne"><span class="h-jour">Mardi</span><span class="h-val">9h – 12h, 14h – 16h</span></div>
+          <div class="h-ligne"><span class="h-jour">Mercredi</span><span class="h-val">9h – 12h, 14h – 16h</span></div>
+          <div class="h-ligne"><span class="h-jour">Jeudi</span><span class="h-val">9h – 12h, 14h – 16h</span></div>
+          <div class="h-ligne"><span class="h-jour">Vendredi</span><span class="h-val">9h – 12h, 14h – 16h</span></div>
+          <div class="h-ligne ferme"><span class="h-jour">Samedi</span><span class="h-val">Fermé</span></div>
+          <div class="h-ligne ferme"><span class="h-jour">Dimanche</span><span class="h-val">Fermé</span></div>
+        </div>
+        <div class="asso-actions">
+          <a class="asso-itineraire" href="https://g.page/r/CVUdz5qb3j4fEBM" target="_blank" rel="noopener">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 11l19-9-9 19-2-8-8-2z"/></svg>
+            Voir l'itinéraire
+          </a>
+          <a class="asso-mail" href="mailto:gevreynuits@admr21.fr">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7l9 6 9-6"/></svg>
+            Envoyer un mail
+          </a>
+        </div>
+      </article>
+      <article class="asso-carte" data-recherche="admr de pontailler-sur-saône 1 rue du 8 mai 1945, 21270 pontailler-sur-saône">
+        <h3 class="asso-nom">ADMR de Pontailler-sur-Saône</h3>
+        <p class="asso-adr">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21s-7-6.3-7-11a7 7 0 0 1 14 0c0 4.7-7 11-7 11z"/><circle cx="12" cy="10" r="2.5"/></svg>
+          1 Rue du 8 Mai 1945, 21270 Pontailler-sur-Saône
+        </p>
+        <p class="asso-tel">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L14 12l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 2 6a2 2 0 0 1 2-2z"/></svg>
+          <a href="tel:+33380361976">03 80 36 19 76</a>
+        </p>
+        <div class="asso-horaires">
+          <div class="h-titre">Horaires d'ouverture</div>
+          <div class="h-ligne"><span class="h-jour">Lundi</span><span class="h-val">9h – 12h, 14h – 16h</span></div>
+          <div class="h-ligne ferme"><span class="h-jour">Mardi</span><span class="h-val">Fermé</span></div>
+          <div class="h-ligne"><span class="h-jour">Mercredi</span><span class="h-val">9h – 12h, 14h – 16h</span></div>
+          <div class="h-ligne"><span class="h-jour">Jeudi</span><span class="h-val">9h – 12h, 14h – 16h</span></div>
+          <div class="h-ligne ferme"><span class="h-jour">Vendredi</span><span class="h-val">Fermé</span></div>
+          <div class="h-ligne ferme"><span class="h-jour">Samedi</span><span class="h-val">Fermé</span></div>
+          <div class="h-ligne ferme"><span class="h-jour">Dimanche</span><span class="h-val">Fermé</span></div>
+        </div>
+        <div class="asso-actions">
+          <a class="asso-itineraire" href="https://g.page/r/Cfr61kOM2Eg3EBM" target="_blank" rel="noopener">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 11l19-9-9 19-2-8-8-2z"/></svg>
+            Voir l'itinéraire
+          </a>
+          <a class="asso-mail" href="mailto:pontailler@admr21.fr">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7l9 6 9-6"/></svg>
+            Envoyer un mail
+          </a>
+        </div>
+      </article>
+      <article class="asso-carte" data-recherche="admr de pouilly-en-auxois 16 pl. pierre et marie curie, 21320 pouilly-en-auxois">
+        <h3 class="asso-nom">ADMR de Pouilly-en-Auxois</h3>
+        <p class="asso-adr">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21s-7-6.3-7-11a7 7 0 0 1 14 0c0 4.7-7 11-7 11z"/><circle cx="12" cy="10" r="2.5"/></svg>
+          16 Pl. Pierre et Marie Curie, 21320 Pouilly-en-Auxois
+        </p>
+        <p class="asso-tel">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L14 12l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 2 6a2 2 0 0 1 2-2z"/></svg>
+          <a href="tel:+33380906476">03 80 90 64 76</a>
+        </p>
+        <div class="asso-horaires">
+          <div class="h-titre">Horaires d'ouverture</div>
+          <div class="h-ligne"><span class="h-jour">Lundi</span><span class="h-val">10h – 12h</span></div>
+          <div class="h-ligne"><span class="h-jour">Mardi</span><span class="h-val">9h – 12h</span></div>
+          <div class="h-ligne ferme"><span class="h-jour">Mercredi</span><span class="h-val">Fermé</span></div>
+          <div class="h-ligne"><span class="h-jour">Jeudi</span><span class="h-val">9h – 12h</span></div>
+          <div class="h-ligne ferme"><span class="h-jour">Vendredi</span><span class="h-val">Fermé</span></div>
+          <div class="h-ligne ferme"><span class="h-jour">Samedi</span><span class="h-val">Fermé</span></div>
+          <div class="h-ligne ferme"><span class="h-jour">Dimanche</span><span class="h-val">Fermé</span></div>
+          <div class="h-permanence">
+            <div class="h-perm-titre"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L14 12l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 2 6a2 2 0 0 1 2-2z"/></svg> Permanence téléphonique</div>
+            <div class="h-perm-detail">Du lundi au vendredi : 9h – 12h, 14h – 16h</div>
+          </div>
+        </div>
+        <div class="asso-actions">
+          <a class="asso-itineraire" href="https://g.page/r/CYK6SktusT-bEBM" target="_blank" rel="noopener">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 11l19-9-9 19-2-8-8-2z"/></svg>
+            Voir l'itinéraire
+          </a>
+          <a class="asso-mail" href="mailto:pouilly@admr21.fr">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7l9 6 9-6"/></svg>
+            Envoyer un mail
+          </a>
+        </div>
+      </article>
+      <article class="asso-carte" data-recherche="admr de saint-jean-de-losne 19 all. du bastion des charmilles, 21170 saint-jean-de-losne">
+        <h3 class="asso-nom">ADMR de Saint-Jean-de-Losne</h3>
+        <p class="asso-adr">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21s-7-6.3-7-11a7 7 0 0 1 14 0c0 4.7-7 11-7 11z"/><circle cx="12" cy="10" r="2.5"/></svg>
+          19 All. du Bastion des Charmilles, 21170 Saint-Jean-de-Losne
+        </p>
+        <p class="asso-tel">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L14 12l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 2 6a2 2 0 0 1 2-2z"/></svg>
+          <a href="tel:+33380290143">03 80 29 01 43</a>
+        </p>
+        <div class="asso-horaires">
+          <div class="h-titre">Horaires d'ouverture</div>
+          <div class="h-ligne"><span class="h-jour">Lundi</span><span class="h-val">9h – 12h, 14h – 16h</span></div>
+          <div class="h-ligne ferme"><span class="h-jour">Mardi</span><span class="h-val">Fermé</span></div>
+          <div class="h-ligne ferme"><span class="h-jour">Mercredi</span><span class="h-val">Fermé</span></div>
+          <div class="h-ligne"><span class="h-jour">Jeudi</span><span class="h-val">9h – 12h, 14h – 16h</span></div>
+          <div class="h-ligne"><span class="h-jour">Vendredi</span><span class="h-val">9h – 12h, 14h – 16h</span></div>
+          <div class="h-ligne ferme"><span class="h-jour">Samedi</span><span class="h-val">Fermé</span></div>
+          <div class="h-ligne ferme"><span class="h-jour">Dimanche</span><span class="h-val">Fermé</span></div>
+          <div class="h-permanence">
+            <div class="h-perm-titre"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L14 12l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 2 6a2 2 0 0 1 2-2z"/></svg> Permanence téléphonique</div>
+            <div class="h-perm-detail">Mardi et mercredi : 9h – 12h, 14h – 16h</div>
+          </div>
+        </div>
+        <div class="asso-actions">
+          <a class="asso-itineraire" href="https://g.page/r/CeHNjnEi5-OlEBM" target="_blank" rel="noopener">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 11l19-9-9 19-2-8-8-2z"/></svg>
+            Voir l'itinéraire
+          </a>
+          <a class="asso-mail" href="mailto:stjean@admr21.fr">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7l9 6 9-6"/></svg>
+            Envoyer un mail
+          </a>
+        </div>
+      </article>
+      <article class="asso-carte" data-recherche="admr de saint-seine-l'abbaye 4 av. de la gare, 21440 saint-seine-l'abbaye">
+        <h3 class="asso-nom">ADMR de Saint-Seine-l'Abbaye</h3>
+        <p class="asso-adr">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21s-7-6.3-7-11a7 7 0 0 1 14 0c0 4.7-7 11-7 11z"/><circle cx="12" cy="10" r="2.5"/></svg>
+          4 Av. de la Gare, 21440 Saint-Seine-l'Abbaye
+        </p>
+        <p class="asso-tel">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L14 12l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 2 6a2 2 0 0 1 2-2z"/></svg>
+          <a href="tel:+33380351219">03 80 35 12 19</a>
+        </p>
+        <div class="asso-horaires">
+          <div class="h-titre">Horaires d'ouverture</div>
+          <div class="h-ligne ferme"><span class="h-jour">Lundi</span><span class="h-val">Fermé</span></div>
+          <div class="h-ligne"><span class="h-jour">Mardi</span><span class="h-val">8h30 – 16h</span></div>
+          <div class="h-ligne ferme"><span class="h-jour">Mercredi</span><span class="h-val">Fermé</span></div>
+          <div class="h-ligne"><span class="h-jour">Jeudi</span><span class="h-val">8h30 – 16h</span></div>
+          <div class="h-ligne ferme"><span class="h-jour">Vendredi</span><span class="h-val">Fermé</span></div>
+          <div class="h-ligne ferme"><span class="h-jour">Samedi</span><span class="h-val">Fermé</span></div>
+          <div class="h-ligne ferme"><span class="h-jour">Dimanche</span><span class="h-val">Fermé</span></div>
+        </div>
+        <div class="asso-actions">
+          <a class="asso-itineraire" href="https://g.page/r/CbF12PRSBhZiEBM" target="_blank" rel="noopener">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 11l19-9-9 19-2-8-8-2z"/></svg>
+            Voir l'itinéraire
+          </a>
+          <a class="asso-mail" href="mailto:stseine@admr21.fr">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7l9 6 9-6"/></svg>
+            Envoyer un mail
+          </a>
+        </div>
+      </article>
+      <article class="asso-carte" data-recherche="admr de saulieu 3 rue du tour des fossés, 21210 saulieu">
+        <h3 class="asso-nom">ADMR de Saulieu</h3>
+        <p class="asso-adr">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21s-7-6.3-7-11a7 7 0 0 1 14 0c0 4.7-7 11-7 11z"/><circle cx="12" cy="10" r="2.5"/></svg>
+          3 Rue du Tour des Fossés, 21210 Saulieu
+        </p>
+        <p class="asso-tel">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L14 12l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 2 6a2 2 0 0 1 2-2z"/></svg>
+          <a href="tel:+33380642168">03 80 64 21 68</a>
+        </p>
+        <div class="asso-horaires">
+          <div class="h-titre">Horaires d'ouverture</div>
+          <div class="h-ligne"><span class="h-jour">Lundi</span><span class="h-val">9h – 12h, 14h – 16h</span></div>
+          <div class="h-ligne"><span class="h-jour">Mardi</span><span class="h-val">9h – 12h, 14h – 16h</span></div>
+          <div class="h-ligne"><span class="h-jour">Mercredi</span><span class="h-val">9h – 12h, 14h – 16h</span></div>
+          <div class="h-ligne"><span class="h-jour">Jeudi</span><span class="h-val">9h – 12h, 14h – 16h</span></div>
+          <div class="h-ligne"><span class="h-jour">Vendredi</span><span class="h-val">9h – 12h, 14h – 16h</span></div>
+          <div class="h-ligne ferme"><span class="h-jour">Samedi</span><span class="h-val">Fermé</span></div>
+          <div class="h-ligne ferme"><span class="h-jour">Dimanche</span><span class="h-val">Fermé</span></div>
+        </div>
+        <div class="asso-actions">
+          <a class="asso-itineraire" href="https://g.page/r/CSSS-Ir8uAOPEBM" target="_blank" rel="noopener">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 11l19-9-9 19-2-8-8-2z"/></svg>
+            Voir l'itinéraire
+          </a>
+          <a class="asso-mail" href="mailto:saulieu@admr21.fr">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7l9 6 9-6"/></svg>
+            Envoyer un mail
+          </a>
+        </div>
+      </article>
+      <article class="asso-carte" data-recherche="admr de seurre 22 gd rue du faubourg saint-georges, 21250 seurre">
+        <h3 class="asso-nom">ADMR de Seurre</h3>
+        <p class="asso-adr">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21s-7-6.3-7-11a7 7 0 0 1 14 0c0 4.7-7 11-7 11z"/><circle cx="12" cy="10" r="2.5"/></svg>
+          22 Gd Rue du Faubourg Saint-Georges, 21250 Seurre
+        </p>
+        <p class="asso-tel">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L14 12l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 2 6a2 2 0 0 1 2-2z"/></svg>
+          <a href="tel:+33380204958">03 80 20 49 58</a>
+        </p>
+        <div class="asso-horaires">
+          <div class="h-titre">Horaires d'ouverture</div>
+          <div class="h-ligne"><span class="h-jour">Lundi</span><span class="h-val">9h – 12h, 14h – 16h</span></div>
+          <div class="h-ligne"><span class="h-jour">Mardi</span><span class="h-val">9h – 12h, 14h – 16h</span></div>
+          <div class="h-ligne"><span class="h-jour">Mercredi</span><span class="h-val">9h – 12h, 14h – 16h</span></div>
+          <div class="h-ligne"><span class="h-jour">Jeudi</span><span class="h-val">9h – 12h</span></div>
+          <div class="h-ligne"><span class="h-jour">Vendredi</span><span class="h-val">9h – 12h</span></div>
+          <div class="h-ligne ferme"><span class="h-jour">Samedi</span><span class="h-val">Fermé</span></div>
+          <div class="h-ligne ferme"><span class="h-jour">Dimanche</span><span class="h-val">Fermé</span></div>
+        </div>
+        <div class="asso-actions">
+          <a class="asso-itineraire" href="https://g.page/r/CSaBarrNDZBXEBM" target="_blank" rel="noopener">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 11l19-9-9 19-2-8-8-2z"/></svg>
+            Voir l'itinéraire
+          </a>
+          <a class="asso-mail" href="mailto:seurre@admr21.fr">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7l9 6 9-6"/></svg>
+            Envoyer un mail
+          </a>
+        </div>
+      </article>
+      <article class="asso-carte" data-recherche="admr de venarey-les-laumes 5 av. jean jaurès, 21150 venarey-les-laumes">
+        <h3 class="asso-nom">ADMR de Venarey-les-Laumes</h3>
+        <p class="asso-adr">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21s-7-6.3-7-11a7 7 0 0 1 14 0c0 4.7-7 11-7 11z"/><circle cx="12" cy="10" r="2.5"/></svg>
+          5 Av. Jean Jaurès, 21150 Venarey-les-Laumes
+        </p>
+        <p class="asso-tel">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L14 12l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 2 6a2 2 0 0 1 2-2z"/></svg>
+          <a href="tel:+33380891793">03 80 89 17 93</a>
+        </p>
+        <div class="asso-horaires">
+          <div class="h-titre">Horaires d'ouverture</div>
+          <div class="h-ligne ferme"><span class="h-jour">Lundi</span><span class="h-val">Fermé</span></div>
+          <div class="h-ligne"><span class="h-jour">Mardi</span><span class="h-val">8h30 – 12h, 13h30 – 17h</span></div>
+          <div class="h-ligne"><span class="h-jour">Mercredi</span><span class="h-val">8h30 – 12h, 13h30 – 17h</span></div>
+          <div class="h-ligne"><span class="h-jour">Jeudi</span><span class="h-val">8h30 – 12h, 13h30 – 17h</span></div>
+          <div class="h-ligne ferme"><span class="h-jour">Vendredi</span><span class="h-val">Fermé</span></div>
+          <div class="h-ligne ferme"><span class="h-jour">Samedi</span><span class="h-val">Fermé</span></div>
+          <div class="h-ligne ferme"><span class="h-jour">Dimanche</span><span class="h-val">Fermé</span></div>
+          <div class="h-permanence">
+            <div class="h-perm-titre"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L14 12l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 2 6a2 2 0 0 1 2-2z"/></svg> Permanence téléphonique</div>
+            <div class="h-perm-detail">Lundi et vendredi : 8h30 – 12h, 13h30 – 17h</div>
+          </div>
+        </div>
+        <div class="asso-actions">
+          <a class="asso-itineraire" href="https://g.page/r/CfKl-LgRH8DlEBM" target="_blank" rel="noopener">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 11l19-9-9 19-2-8-8-2z"/></svg>
+            Voir l'itinéraire
+          </a>
+          <a class="asso-mail" href="mailto:venarey@admr21.fr">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7l9 6 9-6"/></svg>
+            Envoyer un mail
+          </a>
+        </div>
+      </article>
+      <article class="asso-carte" data-recherche="admr de vitteaux 21 rue edmé millot, 21350 vitteaux">
+        <h3 class="asso-nom">ADMR de Vitteaux</h3>
+        <p class="asso-adr">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21s-7-6.3-7-11a7 7 0 0 1 14 0c0 4.7-7 11-7 11z"/><circle cx="12" cy="10" r="2.5"/></svg>
+          21 Rue Edmé Millot, 21350 Vitteaux
+        </p>
+        <p class="asso-tel">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L14 12l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 2 6a2 2 0 0 1 2-2z"/></svg>
+          <a href="tel:+33380496980">03 80 49 69 80</a>
+        </p>
+        <div class="asso-horaires">
+          <div class="h-titre">Horaires d'ouverture</div>
+          <div class="h-ligne"><span class="h-jour">Lundi</span><span class="h-val">8h30 – 16h</span></div>
+          <div class="h-ligne ferme"><span class="h-jour">Mardi</span><span class="h-val">Fermé</span></div>
+          <div class="h-ligne"><span class="h-jour">Mercredi</span><span class="h-val">8h30 – 16h</span></div>
+          <div class="h-ligne ferme"><span class="h-jour">Jeudi</span><span class="h-val">Fermé</span></div>
+          <div class="h-ligne"><span class="h-jour">Vendredi</span><span class="h-val">8h30 – 16h</span></div>
+          <div class="h-ligne ferme"><span class="h-jour">Samedi</span><span class="h-val">Fermé</span></div>
+          <div class="h-ligne ferme"><span class="h-jour">Dimanche</span><span class="h-val">Fermé</span></div>
+        </div>
+        <div class="asso-actions">
+          <a class="asso-itineraire" href="https://g.page/r/CRJFQPx9Bw9OEBM" target="_blank" rel="noopener">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 11l19-9-9 19-2-8-8-2z"/></svg>
+            Voir l'itinéraire
+          </a>
+          <a class="asso-mail" href="mailto:vitteaux@admr21.fr">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7l9 6 9-6"/></svg>
+            Envoyer un mail
+          </a>
+        </div>
+      </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== 6. EN SAVOIR PLUS ===================== -->
+  <section class="en-savoir" id="en-savoir-plus">
+    <div class="contenu">
+      <div class="en-savoir-carte apparait">
+        <img src="img/logo-admr.png" alt="ADMR" width="560" height="257" loading="lazy">
+        <div class="en-savoir-texte">
+          <h2>Découvrez <em>l'ADMR de Côte-d'Or</em></h2>
+          <p>Aide aux personnes âgées, handicap, familles, ménage… Tous nos services et nos associations près de chez vous.</p>
+        </div>
+        <a class="btn btn-vert" href="https://fede21.admr.org" target="_blank" rel="noopener">
+          En savoir plus sur l'ADMR
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="M13 6l6 6-6 6"/></svg>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  </main>
+
+  <!-- ===================== PIED DE PAGE (repris du Kiosque) ===================== -->
+<style>
+  .pied { background: var(--vert-fonce); color: #DDEAD3; }
+  .pied-inner { max-width: 760px; margin: 0 auto; padding: 34px 24px 28px; text-align: center; }
+  .pied a { color: #fff; }
+  .pied p { margin: 0; }
+  .pied-suivez { font-family: var(--police-titres); color: #fff; font-size: 1.25rem; font-weight: 800; margin: 0 0 16px; }
+  .pied-reseaux { display: flex; justify-content: center; flex-wrap: wrap; gap: 12px; margin-bottom: 22px; }
+  .pied-reseaux a { width: 42px; height: 42px; border-radius: 50%; background: rgba(255,255,255,.14); display: inline-flex; align-items: center; justify-content: center; transition: background .15s ease; }
+  .pied-reseaux a:hover { background: rgba(255,255,255,.28); }
+  .pied-reseaux svg { width: 21px; height: 21px; fill: #fff; }
+  .pied-contact { font-size: .95rem; margin-bottom: 6px; }
+  .pied-sites { font-size: .95rem; }
+  .pied .mention { border-top: 1px solid rgba(255,255,255,.15); margin-top: 20px; padding-top: 16px; font-size: .85rem; color: #BBD3AD; }
+  .pied-legal { font-size: .82rem; color: #BBD3AD; margin-top: 10px; }
+  @media (max-width: 520px) { .pied-inner { padding: 28px 18px 24px; } }
+</style>
+
+<footer class="pied">
+  <div class="pied-inner">
+    <p class="pied-suivez">Suivez l'ADMR de Côte-d'Or</p>
+
+    <div class="pied-reseaux">
+      <a href="https://www.facebook.com/fdadmr21/" target="_blank" rel="noopener" aria-label="Facebook"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M22 12a10 10 0 1 0-11.6 9.9v-7H7.9V12h2.5V9.8c0-2.5 1.5-3.9 3.8-3.9 1.1 0 2.2.2 2.2.2v2.5h-1.2c-1.2 0-1.6.8-1.6 1.6V12h2.7l-.4 2.9h-2.3v7A10 10 0 0 0 22 12z"/></svg></a>
+      <a href="https://www.instagram.com/fdadmr21/" target="_blank" rel="noopener" aria-label="Instagram"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.2c3.2 0 3.6 0 4.9.1 1.2.1 1.8.3 2.2.4.6.2 1 .5 1.4.9.4.4.7.8.9 1.4.2.4.4 1 .4 2.2.1 1.3.1 1.7.1 4.9s0 3.6-.1 4.9c-.1 1.2-.3 1.8-.4 2.2-.2.6-.5 1-.9 1.4-.4.4-.8.7-1.4.9-.4.2-1 .4-2.2.4-1.3.1-1.7.1-4.9.1s-3.6 0-4.9-.1c-1.2-.1-1.8-.3-2.2-.4-.6-.2-1-.5-1.4-.9-.4-.4-.7-.8-.9-1.4-.2-.4-.4-1-.4-2.2-.1-1.3-.1-1.7-.1-4.9s0-3.6.1-4.9c.1-1.2.3-1.8.4-2.2.2-.6.5-1 .9-1.4.4-.4.8-.7 1.4-.9.4-.2 1-.4 2.2-.4 1.3-.1 1.7-.1 4.9-.1zm0 1.8c-3.1 0-3.5 0-4.7.1-1.1.1-1.7.2-2.1.4-.5.2-.9.4-1.3.8-.4.4-.6.8-.8 1.3-.2.4-.3 1-.4 2.1-.1 1.2-.1 1.6-.1 4.7s0 3.5.1 4.7c.1 1.1.2 1.7.4 2.1.2.5.4.9.8 1.3.4.4.8.6 1.3.8.4.2 1 .3 2.1.4 1.2.1 1.6.1 4.7.1s3.5 0 4.7-.1c1.1-.1 1.7-.2 2.1-.4.5-.2.9-.4 1.3-.8.4-.4.6-.8.8-1.3.2-.4.3-1 .4-2.1.1-1.2.1-1.6.1-4.7s0-3.5-.1-4.7c-.1-1.1-.2-1.7-.4-2.1-.2-.5-.4-.9-.8-1.3-.4-.4-.8-.6-1.3-.8-.4-.2-1-.3-2.1-.4-1.2-.1-1.6-.1-4.7-.1zm0 3.1a4.9 4.9 0 1 1 0 9.8 4.9 4.9 0 0 1 0-9.8zm0 8.1a3.2 3.2 0 1 0 0-6.4 3.2 3.2 0 0 0 0 6.4zm6.3-8.3a1.15 1.15 0 1 1-2.3 0 1.15 1.15 0 0 1 2.3 0z"/></svg></a>
+      <a href="https://fr.linkedin.com/company/f%C3%A9d%C3%A9ration-admr-c%C3%B4te-d-or" target="_blank" rel="noopener" aria-label="LinkedIn"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4.98 3.5A2.5 2.5 0 1 1 5 8.5a2.5 2.5 0 0 1 0-5zM3 9h4v12H3V9zm6 0h3.8v1.6h.1c.5-1 1.8-2 3.7-2 4 0 4.7 2.6 4.7 6V21h-4v-5.3c0-1.3 0-2.9-1.8-2.9s-2 1.4-2 2.8V21H9V9z"/></svg></a>
+      <a href="https://www.youtube.com/@admrcotedor21" target="_blank" rel="noopener" aria-label="YouTube"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M23 12s0-3.6-.5-5.3a2.8 2.8 0 0 0-2-2C18.7 4.2 12 4.2 12 4.2s-6.7 0-8.5.5a2.8 2.8 0 0 0-2 2C1 8.4 1 12 1 12s0 3.6.5 5.3a2.8 2.8 0 0 0 2 2c1.8.5 8.5.5 8.5.5s6.7 0 8.5-.5a2.8 2.8 0 0 0 2-2C23 15.6 23 12 23 12zM9.8 15.3V8.7l5.7 3.3-5.7 3.3z"/></svg></a>
+      <a href="https://www.tiktok.com/@fdadmr21" target="_blank" rel="noopener" aria-label="TikTok"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M16.5 3c.3 2.1 1.5 3.6 3.5 3.9v2.5c-1.2.1-2.4-.2-3.5-.9v5.6c0 3.4-2.5 5.9-5.8 5.9a5.7 5.7 0 0 1-5.7-5.7 5.7 5.7 0 0 1 6.6-5.6v2.6c-.4-.1-.9-.2-1.3-.2-1.6 0-2.9 1.3-2.9 3 0 1.6 1.2 2.9 2.8 2.9 1.7 0 3-1.3 3-3V3h3.3z"/></svg></a>
+    </div>
+
+    <p class="pied-contact">Pour toutes vos questions : <a href="mailto:communication@admr21.fr">communication@admr21.fr</a></p>
+    <p class="pied-sites">Nos autres sites : <a href="https://www.fede21.admr.org" target="_blank" rel="noopener">www.fede21.admr.org</a> et <a href="https://www.admr-21.fr" target="_blank" rel="noopener">www.admr-21.fr</a></p>
+
+    <p class="mention">Crédit d'impôt de 50&nbsp;% selon la législation en vigueur (art. 199 sexdecies du CGI). Les données transmises via le formulaire sont destinées exclusivement à l'ADMR de Côte-d'Or pour répondre à votre demande. Conformément au RGPD, vous pouvez exercer vos droits d'accès, de rectification et de suppression en écrivant à accueil@admr21.fr.</p>
+  </div>
+</footer>
+
+  <div class="cta-mobile">
+    <a class="btn btn-vert" href="tel:+33380514751" aria-label="Appeler l'ADMR">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L14 12l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 2 6a2 2 0 0 1 2-2z"/></svg>
+    </a>
+    <a class="btn btn-orange" href="#rappel">On vous rappelle</a>
+  </div>
+
+  <script>
+    /* ============================================================
+       RÉGLAGE : adresse qui reçoit les demandes de rappel
+       (service FormSubmit — voir note de mise en ligne)
+       ============================================================ */
+    var DESTINATAIRE = "communication@admr21.fr";
+
+    /* ---------- Formulaire « On vous rappelle » ---------- */
+    (function () {
+      var form = document.getElementById("form-rappel");
+      var msg = document.getElementById("f-message");
+      var btn = document.getElementById("f-envoyer");
+      function afficher(type, texte) { msg.className = "msg-form " + type; msg.textContent = texte; }
+
+      form.addEventListener("submit", function (e) {
+        e.preventDefault();
+        if (!form.checkValidity()) {
+          var premier = form.querySelector(":invalid");
+          if (premier) premier.focus();
+          if (premier && premier.id === "f-tel") afficher("erreur", "Merci d'indiquer un numéro de téléphone valide (ex. 06 12 34 56 78).");
+          else if (premier && premier.id === "f-consent") afficher("erreur", "Merci de cocher la case d'accord pour que nous puissions vous rappeler.");
+          else afficher("erreur", "Merci de renseigner votre nom, prénom et téléphone.");
+          return;
+        }
+        var d = new FormData(form);
+        if (d.get("_honey")) return; // robot
+        var donnees = {
+          "Nom": d.get("Nom"), "Prénom": d.get("Prénom"), "Téléphone": d.get("Téléphone"),
+          "Origine": "Landing page Le ménage ADMR",
+          "_subject": "Demande de rappel — Le ménage ADMR : " + d.get("Prénom") + " " + d.get("Nom"),
+          "_template": "table", "_captcha": "false"
+        };
+        btn.disabled = true; afficher("", "");
+        fetch("https://formsubmit.co/ajax/" + DESTINATAIRE, {
+          method: "POST",
+          headers: { "Content-Type": "application/json", "Accept": "application/json" },
+          body: JSON.stringify(donnees)
+        })
+        .then(function (r) { return r.json().then(function (j) { if (!r.ok || String(j.success) !== "true") throw new Error(j.message || "envoi"); }); })
+        .then(function () {
+          form.reset();
+          afficher("ok", "Merci ! Votre demande est bien enregistrée. Nos équipes vous rappellent très vite.");
+        })
+        .catch(function () {
+          afficher("erreur", "L'envoi n'a pas pu aboutir. Appelez-nous au 03 80 51 47 51 ou écrivez à accueil@admr21.fr.");
+        })
+        .finally(function () { btn.disabled = false; });
+      });
+    })();
+
+    /* ---------- Simulateur crédit d'impôt ---------- */
+    (function () {
+      var r = document.getElementById("sim-montant");
+      var fmt = function (n) { return Math.round(n).toLocaleString("fr-FR") + " €"; };
+      function maj() {
+        var m = +r.value;
+        var annuel = Math.min(m * 12, 12000);
+        document.getElementById("sim-sortie").textContent = fmt(m);
+        document.getElementById("sim-credit").textContent = fmt(annuel / 2);
+        document.getElementById("sim-reel").textContent = fmt(m - annuel / 2 / 12);
+      }
+      r.addEventListener("input", maj); maj();
+    })();
+
+    /* ---------- Recherche associations ---------- */
+    (function () {
+      var champ = document.getElementById("recherche");
+      var cartes = document.querySelectorAll(".asso-carte");
+      var msgVide = document.getElementById("aucun-resultat");
+      var norm = function (s) { return (s || "").toLowerCase().normalize("NFD").replace(/[̀-ͯ]/g, ""); };
+      champ.addEventListener("input", function () {
+        var q = norm(champ.value.trim()), visibles = 0;
+        cartes.forEach(function (c) {
+          var ok = q === "" || norm(c.getAttribute("data-recherche")).indexOf(q) !== -1;
+          c.style.display = ok ? "" : "none";
+          if (ok) visibles++;
+        });
+        msgVide.style.display = (q !== "" && visibles === 0) ? "block" : "none";
+      });
+    })();
+
+    /* ---------- Apparition au défilement ---------- */
+    (function () {
+      var els = document.querySelectorAll(".apparait");
+      if (!("IntersectionObserver" in window)) { els.forEach(function (e) { e.classList.add("visible"); }); return; }
+      var io = new IntersectionObserver(function (entrees) {
+        entrees.forEach(function (en) { if (en.isIntersecting) { en.target.classList.add("visible"); io.unobserve(en.target); } });
+      }, { threshold: .12 });
+      els.forEach(function (e) { io.observe(e); });
+    })();
+  </script>
+</body>
+</html>
