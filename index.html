@@ -179,6 +179,7 @@
     .champ input:focus { outline: none; border-color: var(--vert-admr); box-shadow: 0 0 0 4px rgba(91,155,49,.18); }
     .champ input:user-invalid { border-color: #C62828; }
     .consent { display: flex; gap: 10px; align-items: flex-start; font-size: .84rem; color: var(--gris-clair); margin: 4px 0 18px; }
+    .consent a { color: var(--vert-fonce); }
     .consent input { width: 20px; height: 20px; margin-top: 1px; accent-color: var(--vert-admr); flex: 0 0 auto; }
     .formulaire .btn { width: 100%; }
     .formulaire .btn[disabled] { opacity: .65; cursor: wait; }
@@ -503,7 +504,7 @@
           </div>
           <div class="champ"><label for="f-tel">Téléphone *</label><input id="f-tel" name="Téléphone" type="tel" autocomplete="tel" inputmode="tel" placeholder="06 12 34 56 78" pattern="^(?:\+33\s?|0)[1-9](?:[\s.\-]?\d{2}){4}$" required></div>
           <div class="piege" aria-hidden="true"><label>Ne pas remplir <input type="text" name="_honey" tabindex="-1" autocomplete="off"></label></div>
-          <label class="consent"><input type="checkbox" id="f-consent" required><span>J'accepte que l'ADMR de Côte-d'Or utilise ces informations pour me recontacter au sujet de ma demande. Elles ne sont ni cédées ni utilisées à d'autres fins.</span></label>
+          <label class="consent"><input type="checkbox" id="f-consent" required><span>J'accepte que l'ADMR de Côte-d'Or utilise ces informations pour me recontacter au sujet de ma demande. Elles ne sont ni cédées ni utilisées à d'autres fins (<a href="mentions-legales.html#donnees" target="_blank">en savoir plus</a>).</span></label>
           <button class="btn btn-vert" type="submit" id="f-envoyer">
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 2L11 13"/><path d="M22 2l-7 20-4-9-9-4 20-7z"/></svg>
             Je souhaite être rappelé
@@ -1287,6 +1288,7 @@
     <p class="pied-sites">Nos autres sites : <a href="https://www.fede21.admr.org" target="_blank" rel="noopener">www.fede21.admr.org</a> et <a href="https://www.admr-21.fr" target="_blank" rel="noopener">www.admr-21.fr</a></p>
 
     <p class="mention">Crédit d'impôt de 50&nbsp;% selon la législation en vigueur (art. 199 sexdecies du CGI). Les données transmises via le formulaire sont destinées exclusivement à l'ADMR de Côte-d'Or pour répondre à votre demande. Conformément au RGPD, vous pouvez exercer vos droits d'accès, de rectification et de suppression en écrivant à accueil@admr21.fr.</p>
+    <p class="pied-legal"><a href="mentions-legales.html">Mentions légales et données personnelles</a></p>
   </div>
 </footer>
 
